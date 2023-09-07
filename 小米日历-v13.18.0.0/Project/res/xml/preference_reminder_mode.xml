@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <CheckBoxPreference android:title="@string/preferences_allow_remind" android:key="preferences_alerts" android:defaultValue="true" />
+    <PreferenceCategory android:title="@string/preferences_alerts_vibrate_title" android:key="preferences_vibrate_category">
+        <com.android.calendar.preferences.MiuiDefaultRingtonePreference android:title="@string/preferences_notification_ringtone_title" android:key="preferences_notification_ringtone" android:defaultValue="content://settings/system/alarm_alert" android:ringtoneType="all" android:showDefault="false" />
+        <miuix.preference.DropDownPreference android:title="@string/preferences_alerts_vibrateWhen_title" android:key="preferences_alerts_vibrateWhen" android:defaultValue="@string/prefDefault_alerts_vibrateWhen" app:entries="@array/prefEntries_alerts_vibrateWhen" app:entryValues="@array/prefValues_alerts_vibrateWhen" />
+        <miuix.preference.DropDownPreference android:title="@string/preferences_popup_alert_title" android:key="preferences_popup_alert" android:defaultValue="@string/pref_default_popup_alert_value" app:entries="@array/prefEntries_alerts_popup_new" app:entrySummaries="@array/prefEntries_alerts_popup_new_summary" app:entryValues="@array/prefValues_alerts_popup" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/preferences_alarms_category_title" android:key="preferences_alarms_category">
+        <com.android.calendar.preferences.MiuiDefaultRingtonePreference android:title="@string/preferences_alarms_sound" android:key="preferences_alarm_alerts_ringtone" android:defaultValue="content://settings/system/alarm_alert" android:ringtoneType="alarm" android:showDefault="false" />
+        <miuix.preference.DropDownPreference android:title="@string/preferences_alarms_vibrateWhen" android:key="preferences_alarm_alerts_vibrateWhen" android:defaultValue="@string/prefDefault_alerts_vibrateWhen" app:entries="@array/prefEntries_alerts_vibrateWhen" app:entryValues="@array/prefValues_alerts_vibrateWhen" />
+    </PreferenceCategory>
+</PreferenceScreen>

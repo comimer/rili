@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/normal_agenda_item_bg" android:background="@drawable/widget_normal_agenda_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/widget_row" android:layout_width="fill_parent" android:layout_height="@dimen/widget_list_normal_item_height">
+        <ImageView android:id="@id/agenda_item_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_centerVertical="true" android:layout_marginStart="@dimen/widget_list_margin_start" android:layout_marginEnd="@dimen/widget_list_margin_start" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/agenda_item_color" android:layout_centerVertical="true">
+            <TextView android:id="@id/when" style="@style/WidgetNormalAgendaTimeText" />
+            <TextView android:id="@id/when_end" android:visibility="gone" style="@style/WidgetNormalAgendaEndTimeText" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/normal_agande_item_tip_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="86.32999dip">
+            <TextView android:id="@id/title" style="@style/WidgetNormalAgendaTitleText" />
+            <TextView android:id="@id/where" style="@style/WidgetNormalAgendaPlaceText" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/widget_normal_agenda_item_tip" android:gravity="center" android:id="@id/normal_agande_tip" android:paddingTop="@dimen/widget_normal_agenda_item_tip_top_padding" android:paddingBottom="@dimen/widget_normal_agenda_item_tip_top_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:paddingStart="@dimen/widget_normal_agenda_item_tip_left_padding" android:paddingEnd="@dimen/widget_normal_agenda_item_tip_left_padding" android:layout_marginStart="@dimen/widget_normal_agenda_item_tip_margin" android:layout_toEndOf="@id/normal_agande_item_tip_ll" />
+    </RelativeLayout>
+</LinearLayout>

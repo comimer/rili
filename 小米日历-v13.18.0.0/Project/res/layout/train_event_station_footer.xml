@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/train_service_ll" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/edit_event_divider" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/more_info" android:background="@color/card_bg_color_n" android:layout_width="fill_parent" android:layout_height="@dimen/train_event_station_footer_height" android:paddingStart="@dimen/train_event_station_footer_text_padding_start" android:paddingEnd="@dimen/train_event_station_footer_text_padding_right">
+        <TextView android:textSize="@dimen/font_size_50" android:textColor="@color/train_event_text_color" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/train_event_service" android:fontFamily="mipro-demibold" app:layout_constraintBottom_toTopOf="@id/sub_title" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_chainStyle="packed" />
+        <TextView android:textSize="@dimen/train_event_small_text_size" android:textColor="@color/train_event_light_text_color" android:id="@id/sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0px" android:text="@string/train_event_more_info" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/title" />
+        <ImageView android:id="@id/right_arrow" android:layout_marginLeft="@dimen/normal_margin" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/RightArrowImageStyle" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

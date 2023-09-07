@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/train_event_station_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.miui.calendar.view.LoadingView android:id="@id/loading" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.miui.calendar.event.travel.FlowLayout android:id="@id/arrive_stations" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/train_event_arrive_large_margin" android:layout_marginTop="@dimen/large_margin" android:layout_marginRight="@dimen/train_event_arrive_large_margin" android:layout_marginBottom="@dimen/large_margin" />
+    <TextView android:textAppearance="@style/Miuix.AppCompat.TextAppearance.BlankPage" android:gravity="center" android:id="@id/error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

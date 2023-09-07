@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/CardLayoutStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/title_root" style="@style/CardTitleLayoutStyle">
+        <TextView android:id="@id/title" android:layout_width="0.0dip" android:layout_marginTop="@dimen/card_group_title_margin_top" android:layout_marginStart="@dimen/large_margin" app:layout_constraintEnd_toStartOf="@id/change" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/CardTitleTextStyle" />
+        <TextView android:id="@id/change" android:layout_marginTop="@dimen/card_title_right_button_margin_top" android:text="@string/card_title_change" android:layout_marginEnd="@dimen/large_margin" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/CardTitleRightButtonStyle" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.miui.calendar.view.DynamicLinearLayout android:id="@id/item_list" style="@style/DynamicContainerStyle" />
+    <TextView android:id="@id/more" android:layout_marginTop="@dimen/history_card_items_margin_bottom" style="@style/CardMoreTextStyle" />
+</LinearLayout>

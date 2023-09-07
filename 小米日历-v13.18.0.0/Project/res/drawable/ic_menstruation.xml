@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="38.0dip" android:width="37.32141dip" android:viewportWidth="110.0" android:viewportHeight="112.0" xmlns:aapt="http://schemas.android.com/aapt"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@drawable/$ic_menstruation__0" android:pathData="M0,57C0,26.624 24.624,2 55,2C85.376,2 110,26.624 110,57C110,87.376 85.376,112 55,112C24.624,112 0,87.376 0,57Z" android:fillType="evenOdd" />
+    <path android:fillColor="#ffffffff" android:pathData="M45,29L45,29A4,4 0,0 1,49 33L49,42A4,4 0,0 1,45 46L45,46A4,4 0,0 1,41 42L41,33A4,4 0,0 1,45 29z" android:strokeAlpha="0.6" android:fillAlpha="0.6" />
+    <path android:fillColor="#ffffffff" android:pathData="M65,29L65,29A4,4 0,0 1,69 33L69,42A4,4 0,0 1,65 46L65,46A4,4 0,0 1,61 42L61,33A4,4 0,0 1,65 29z" android:strokeAlpha="0.6" android:fillAlpha="0.6" />
+    <path android:fillColor="@drawable/$ic_menstruation__1" android:pathData="M36,37L74,37A6,6 0,0 1,80 43L80,75A6,6 0,0 1,74 81L36,81A6,6 0,0 1,30 75L30,43A6,6 0,0 1,36 37z" />
+    <path android:fillColor="#ffffc0bc" android:pathData="M63.507,63.076C64.977,61.889 65.918,60.072 65.918,58.034C65.918,54.457 63.018,51.558 59.441,51.558C57.629,51.558 55.99,52.302 54.815,53.502C53.639,52.302 52.001,51.558 50.188,51.558C46.611,51.558 43.712,54.457 43.712,58.035C43.712,60.094 44.673,61.929 46.172,63.115C46.277,63.228 46.394,63.336 46.52,63.437L54.832,70.101L63.126,63.434C63.265,63.322 63.392,63.202 63.507,63.076Z" android:fillType="evenOdd" />
+</vector>

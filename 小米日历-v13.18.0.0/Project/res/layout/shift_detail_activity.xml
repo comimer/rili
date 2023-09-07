@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/card_dark_light_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/event_info_banner" android:layout_width="fill_parent" android:layout_height="@dimen/calendar_event_header_image_height" android:layout_margin="@dimen/calendar_event_header_image_margin">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/calendar_picker_switcher_padding_left_right" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/edit_event_divider_padding_bottom">
+            <TextView android:textSize="@dimen/calendar_event_header_title_large_text_size" android:textColor="@color/credit_detail_header_text_color" android:id="@id/time_today" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fontFamily="miui-bold" android:textFontWeight="600" />
+            <TextView android:textSize="@dimen/home_card_primary_big_title_text_size" android:textColor="@color/white" android:id="@id/label_today" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:id="@id/tomorrow_root" style="@style/dateCalculateListItemStyle">
+            <TextView android:id="@id/label_tomorrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/card_credit_repayment" style="@style/HomeCardPrimaryBigTitleTextStyle" />
+            <TextView android:textSize="@dimen/no_network_tips_text_size" android:textColor="@color/card_detail_shift_time_text_color" android:gravity="end" android:layout_gravity="center_vertical" android:id="@id/time_tomorrow" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:fontFamily="miui-bold" android:textFontWeight="500" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/after_tomorrow_root" style="@style/dateCalculateListItemStyle">
+            <TextView android:id="@id/label_after_tomorrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/card_credit_today" style="@style/HomeCardPrimaryBigTitleTextStyle" />
+            <TextView android:textSize="@dimen/no_network_tips_text_size" android:textColor="@color/card_detail_shift_time_text_color" android:gravity="end" android:layout_gravity="center_vertical" android:id="@id/time_after_tomorrow" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:fontFamily="miui-bold" android:textFontWeight="500" />
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/edit_event_divider" />
+    <LinearLayout android:orientation="vertical" android:background="@color/card_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/double_line_list_primary_text_size" android:gravity="center_vertical" android:paddingTop="@dimen/calendar_calculate_spinner_margin_start" android:paddingBottom="@dimen/calendar_event_header_title_margin" android:text="@string/shift_detail_desc_label" android:paddingStart="@dimen/calendar_birthday_item_margin_left" style="@style/HomeCardPrimaryBigTitleTextStyle" />
+        <TextView android:textSize="@dimen/list_secondary_text_size" android:textColor="@color/list_secondary_text_color" android:id="@id/desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/calendar_birthday_item_margin_left" android:layout_marginRight="@dimen/calendar_birthday_item_margin_left" android:layout_marginBottom="40.0dip" android:lineSpacingExtra="@dimen/small_margin" android:fontFamily="miui" />
+    </LinearLayout>
+</LinearLayout>

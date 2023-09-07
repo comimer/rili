@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/card_dark_light_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="90.0px" android:paddingEnd="90.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:paddingStart="0.0px" android:paddingEnd="0.0px" style="@style/dateCalculateListItemStyle">
+        <TextView android:textSize="@dimen/double_line_list_primary_text_size" android:textColor="@color/card_header_title_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/card_credit_repayment" />
+        <TextView android:textSize="@dimen/double_line_list_primary_text_size" android:textColor="@color/button_text_color" android:gravity="end" android:layout_gravity="center_vertical" android:id="@id/repayment_date" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:paddingStart="0.0px" android:paddingEnd="0.0px" style="@style/dateCalculateListItemStyle">
+        <TextView android:textSize="@dimen/double_line_list_primary_text_size" android:textColor="@color/card_header_title_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/card_credit_today" />
+        <TextView android:textSize="@dimen/double_line_list_primary_text_size" android:textColor="@color/button_text_color" android:gravity="end" android:layout_gravity="center_vertical" android:id="@id/system_date" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

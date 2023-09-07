@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider android:minWidth="@dimen/widget_near_agenda_width" android:minHeight="@dimen/widget_near_agenda_height" android:updatePeriodMillis="21600000" android:initialLayout="@layout/near_event_app_widget_init" android:previewImage="@drawable/widget_near_agenda_preview"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

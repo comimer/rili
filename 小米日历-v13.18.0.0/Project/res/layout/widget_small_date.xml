@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:id="@android:id/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/widget_small_date_fl" android:background="@drawable/widget_two_background" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/widget_small_date_rl" android:paddingTop="@dimen/widget_date_agenda_padding_top" android:paddingBottom="@dimen/widget_date_agenda_padding_top" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/widget_date_agenda_padding_start" android:paddingEnd="@dimen/widget_date_agenda_padding_start">
+            <TextView android:id="@id/tv_day" style="@style/WidgetDateMainText" />
+            <TextView android:id="@id/tv_lunar" android:layout_alignParentBottom="true" style="@style/WidgetDateGreyText" />
+            <TextView android:id="@id/tv_week" android:layout_above="@id/tv_lunar" style="@style/WidgetDateText" />
+            <TextView android:id="@id/tv_holiday" android:layout_marginBottom="8.0dip" android:layout_above="@id/tv_week" style="@style/WidgetDateGreyText" />
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

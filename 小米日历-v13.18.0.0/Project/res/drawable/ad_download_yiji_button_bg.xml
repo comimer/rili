@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/ad_yiji_button_radius" />
+    <stroke android:width="@dimen/ad_yiji_button_border_width" android:color="@color/ad_yiji_btn_progress_border_color" />
+</shape>

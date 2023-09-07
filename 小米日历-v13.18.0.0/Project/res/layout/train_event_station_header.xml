@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/train_event_station_header_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dimen_card_info_padding_start" android:paddingEnd="@dimen/dimen_card_info_padding_end">
+        <TextView android:textSize="@dimen/train_event_large_text_size" android:textColor="@color/train_event_light_text_color" android:id="@id/station_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/train_event_station_header_station_min_width" android:text="@string/train_event_station_header_name" />
+        <TextView android:textSize="@dimen/train_event_large_text_size" android:textColor="@color/train_event_light_text_color" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/train_event_station_header_arrive_time" />
+        <TextView android:textSize="@dimen/train_event_large_text_size" android:textColor="@color/train_event_light_text_color" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/train_event_station_header_depart_time" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/train_event_large_text_size" android:textColor="@color/train_event_light_text_color" android:gravity="end" android:layout_gravity="end|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/train_event_station_header_stay_time" />
+    </LinearLayout>
+</LinearLayout>

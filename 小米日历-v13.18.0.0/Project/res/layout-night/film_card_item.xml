@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.miui.calendar.view.OnlineImageView android:id="@id/image" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="@dimen/file_image_width" android:layout_height="@dimen/film_image_height" android:scaleType="centerCrop" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:rounded_mode="all" app:rounded_radius="@dimen/card_online_image_radius" style="@style/ImageWithBorderStyle" />
+    <View android:background="@drawable/image_with_border_mask" android:layout_width="@dimen/file_image_width" android:layout_height="@dimen/film_image_height" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/content_container" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/film_card_primary_margin_top" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/image">
+        <TextView android:id="@id/primary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" style="@style/HomeCardPrimaryTitleTextStyle" />
+        <TextView android:textSize="@dimen/tab_text_size" android:id="@id/secondary" android:layout_width="fill_parent" android:layout_marginTop="@dimen/film_card_secondary_margin_top" style="@style/HomeCardSubTitleTextStyle" />
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/small_margin">
+            <RatingBar android:id="@id/rating" android:layout_marginStart="@dimen/film_card_rating_margin_start" style="@style/rating_bar_style" />
+            <TextView android:id="@id/rating_text" android:layout_marginStart="@dimen/small_margin" style="@style/RatingTextStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

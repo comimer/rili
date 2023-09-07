@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/calendar_event_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/large_title_parent" android:background="@color/event_info_item_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/event_info_item_height" style="@style/eventInfoItemStyle">
+            <TextView android:layout_marginBottom="@dimen/calendar_event_header_title_margin" android:text="@string/event_title" style="@style/DoubleLineListPrimaryTextStyle" />
+            <TextView android:id="@id/large_title_text" style="@style/ListSecondaryTextStyle" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/description_parent" android:background="@color/event_info_item_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/event_info_item_height" style="@style/eventInfoItemStyle">
+            <TextView android:id="@id/desc_label" android:layout_marginBottom="@dimen/calendar_event_header_title_margin" android:text="@string/event_info_descrip" style="@style/DoubleLineListPrimaryTextStyle" />
+            <TextView android:id="@id/desc" android:paddingBottom="@dimen/action_bar_title_month_margin_left" android:layout_marginEnd="@dimen/page_margin_medium" style="@style/ListSecondaryTextStyle" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/alarm" android:layout_width="fill_parent" android:layout_height="@dimen/calendar_setting_item_min_height">
+            <LinearLayout android:id="@id/alarm_row" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" style="@style/eventInfoItemViewLastStyle">
+                <TextView android:textSize="@dimen/double_line_list_primary_text_size" android:textColor="@color/card_header_title_text_color" android:clickable="false" android:text="@string/pref_title_alarm_remind" android:layout_weight="1.0" style="@style/eventInfoSubTitleStyle" />
+                <miui.widget.SlidingButton android:id="@id/is_alarm" android:contentDescription="@string/accessibility_alarm_remind" style="@style/eventInfoListItemSecondarySwitchStyle" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/activity_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/eventInfoItemViewLastStyle" />
+        <ListView android:id="@id/activity_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/reminder_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/reminder_row" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_card_info_item_height" android:paddingStart="@dimen/dimen_card_info_padding_start" android:paddingEnd="@dimen/dimen_card_info_padding_end">
+            <TextView android:layout_width="0.0dip" android:text="@string/travel_item_reminder" android:layout_weight="1.0" android:fontFamily="mipro-demibold" style="@style/EventInfoItemPrimaryTextStyle" />
+            <TextView android:textSize="@dimen/event_info_sub_title_size" android:textColor="@color/list_secondary_text_color" android:id="@id/right_text" android:fontFamily="mipro-demibold" style="@style/EventInfoItemRightTextStyle" />
+            <miuix.appcompat.widget.Spinner android:gravity="start" android:id="@id/spinner" android:background="@null" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" app:spinnerModeCompat="dialog" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@id/alarm_row" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_card_info_item_height" android:paddingStart="@dimen/dimen_card_info_padding_start" android:paddingEnd="@dimen/dimen_card_info_padding_end">
+            <TextView android:layout_width="0.0dip" android:text="@string/pref_title_alarm_remind" android:layout_weight="1.0" android:fontFamily="mipro-demibold" style="@style/EventInfoItemPrimaryTextStyle" />
+            <miuix.slidingwidget.widget.SlidingButton android:id="@id/is_alarm" android:contentDescription="@string/accessibility_alarm_remind" style="@style/eventInfoListItemSecondarySwitchStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:tag="layout/activity_trust_certificate_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/activity_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:text="@string/trust_certificate_unknown_certificate_found" style="@style/TextAppearance.MaterialComponents.Body1" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Widget.MaterialComponents.CardView">
+            <LinearLayout android:orientation="vertical" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip">
+                <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:text="@string/trust_certificate_x509_certificate_details" style="@style/TextAppearance.MaterialComponents.Headline5" />
+                <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/trust_certificate_issued_for" style="@style/TextAppearance.MaterialComponents.Overline" />
+                <TextView android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" style="@style/TextAppearance.MaterialComponents.Body1" />
+                <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/trust_certificate_issued_by" style="@style/TextAppearance.MaterialComponents.Overline" />
+                <TextView android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" style="@style/TextAppearance.MaterialComponents.Body1" />
+                <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/trust_certificate_validity_period" style="@style/TextAppearance.MaterialComponents.Overline" />
+                <TextView android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" style="@style/TextAppearance.MaterialComponents.Body1" />
+                <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/trust_certificate_fingerprints" style="@style/TextAppearance.MaterialComponents.Overline" />
+                <TextView android:tag="binding_4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" style="@style/TextAppearance.MaterialComponents.Body1" />
+                <TextView android:tag="binding_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="16.0dip" style="@style/TextAppearance.MaterialComponents.Body1" />
+                <CheckBox android:tag="binding_6" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/trust_certificate_fingerprint_verified" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Button android:tag="binding_7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:text="@string/trust_certificate_accept" android:onClick="acceptCertificate" style="@style/Widget.MaterialComponents.Button.TextButton" />
+                    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trust_certificate_reject" android:onClick="rejectCertificate" style="@style/Widget.MaterialComponents.Button.TextButton" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/trust_certificate_reset_info" style="@style/TextAppearance.MaterialComponents.Body2" />
+    </LinearLayout>
+</ScrollView>

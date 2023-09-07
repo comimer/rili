@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.miui.calendar.widget.EmptyView android:id="@id/empty_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:empty_action_visible="false" app:empty_icon_resId="@drawable/icon_contact_birthday_empty" app:empty_tip_text="@string/no_contact_birthday_hint" />
+    <com.miui.calendar.view.LoadingLayout android:id="@id/loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/import_btn_container" android:visibility="gone" android:layout_width="@dimen/dimen_import_container_height" android:layout_height="@dimen/dimen_import_container_height" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+        <ImageView android:id="@id/icon_import" android:layout_width="@dimen/dimen_icon_import_size" android:layout_height="@dimen/dimen_icon_import_size" android:src="@drawable/action_new" />
+        <TextView android:textSize="@dimen/font_size_32" android:textColor="@color/edit_text_color" android:id="@id/tv_import" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/import_action" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" style="@style/CardLayoutStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.miui.calendar.view.DynamicLinearLayout android:id="@id/list_container" style="@style/DynamicContainerStyle" />
+</LinearLayout>

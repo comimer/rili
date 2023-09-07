@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/setting_title_import_todo" android:key="key_import_todo" android:summary="@string/setting_desc_import_todo" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/setting_title_yiji_display" android:key="key_chinese_almanac_pref" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/setting_title_holiday_display" android:key="key_holiday_display" android:summary="@string/setting_holiday_display_desc" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/setting_title_weather_card_display" android:key="key_weather_display" android:summary="@string/setting_title_weather_card_desc" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/setting_title_subscription_display" android:key="key_subscription_display" android:summary="@string/setting_title_subscription_desc" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/setting_title_ai_time_parser" android:key="key_ai_time_parse" android:summary="@string/setting_title_ai_time_parser_summary" android:defaultValue="false" />
+</PreferenceScreen>

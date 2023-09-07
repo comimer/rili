@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@id/month_panel_container" android:background="@color/motion_container_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/select_day" android:visibility="invisible" android:layout_width="@dimen/month_week_view_height" android:layout_height="@dimen/month_week_view_height" android:src="@drawable/homepage_select_day_other" />
+    <ViewSwitcher android:id="@id/week_switcher" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.miui.calendar.view.InfiniteViewPager android:id="@id/view_pager" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="@dimen/month_pager_height" />
+</merge>

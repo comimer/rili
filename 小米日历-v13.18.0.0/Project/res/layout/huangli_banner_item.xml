@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/huangli_banner_item_margin" android:paddingEnd="@dimen/huangli_banner_item_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/item1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout style="@style/HuangliBannerImageStyle">
+            <com.miui.calendar.view.OnlineImageView android:id="@id/icon1" style="@style/HuangliBannerImageStyle" />
+            <View android:background="@color/image_mask_color" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <TextView android:id="@id/title1" style="@style/HuangliBannerTextStyle" />
+    </LinearLayout>
+    <Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/item2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout style="@style/HuangliBannerImageStyle">
+            <com.miui.calendar.view.OnlineImageView android:id="@id/icon2" style="@style/HuangliBannerImageStyle" />
+            <View android:background="@color/image_mask_color" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <TextView android:id="@id/title2" style="@style/HuangliBannerTextStyle" />
+    </LinearLayout>
+    <Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/item3" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout style="@style/HuangliBannerImageStyle">
+            <com.miui.calendar.view.OnlineImageView android:id="@id/icon3" style="@style/HuangliBannerImageStyle" />
+            <View android:background="@color/image_mask_color" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <TextView android:id="@id/title3" style="@style/HuangliBannerTextStyle" />
+    </LinearLayout>
+    <Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/item4" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout style="@style/HuangliBannerImageStyle">
+            <com.miui.calendar.view.OnlineImageView android:id="@id/icon4" style="@style/HuangliBannerImageStyle" />
+            <View android:background="@color/image_mask_color" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <TextView android:id="@id/title4" style="@style/HuangliBannerTextStyle" />
+    </LinearLayout>
+</LinearLayout>

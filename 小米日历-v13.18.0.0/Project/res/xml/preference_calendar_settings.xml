@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/account_and_calendar" android:key="category_accounts">
+        <Preference android:title="@string/setting_import_events" android:key="key_import_events" />
+        <Preference android:title="@string/setting_accounts" android:key="key_account_and_calendar" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/menu_general_preferences" android:key="category_general">
+        <miuix.preference.DropDownPreference android:title="@string/preferences_week_start_day_title" android:key="preferences_week_start_day" android:defaultValue="@string/preferences_week_start_day_default" />
+        <Preference android:title="@string/time_zone" android:key="key_time_zone" />
+        <Preference android:title="@string/setting_features_title" android:key="key_features" />
+        <CheckBoxPreference android:title="@string/setting_chinese_calendar" android:key="key_chinese_calendar" android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/menu_reminder_preferences" android:key="category_reminder">
+        <Preference android:title="@string/default_reminder_mode" android:key="key_reminder_mode" />
+        <miuix.preference.DropDownPreference android:title="@string/preferences_default_reminder_title" android:key="preferences_default_reminder" android:defaultValue="@string/preferences_default_reminder_default_value" />
+        <miuix.preference.TextPreference android:title="@string/preferences_default_allday_reminder_title" android:key="preferences_default_allday_reminder" android:defaultValue="@string/preferences_default_allday_reminder_default_value" />
+        <miuix.preference.DropDownPreference android:title="@string/default_reminder_later_time" android:key="preferences_default_reminder_later_time" android:defaultValue="@string/preferences_default_reminder_later_time_default_value" />
+        <CheckBoxPreference android:title="@string/setting_holiday_reminder" android:key="key_holiday_reminder" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/setting_show_reject_agenda" android:key="key_show_reject_agenda" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/setting_others" android:key="category_others">
+        <Preference android:title="@string/setting_daysoff_update" android:key="key_daysoff_update" />
+        <Preference android:title="@string/setting_user_experience" android:key="key_user_experience" />
+        <Preference android:title="@string/privacy_and_permissions" android:key="key_privacy" />
+        <Preference android:title="@string/setting_title_about" android:key="key_about" />
+    </PreferenceCategory>
+</PreferenceScreen>

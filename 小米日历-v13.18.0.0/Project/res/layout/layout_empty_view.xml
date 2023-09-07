@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:forceDarkAllowed="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/empty_container" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.41">
+        <ImageView android:id="@id/empty_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" />
+        <TextView android:textSize="@dimen/empty_view_tip_text_size" android:textColor="@color/empty_tip_text_color" android:id="@id/empty_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/empty_view_tip_top_margin" android:singleLine="true" android:lineHeight="@dimen/empty_view_tip_line_height" />
+        <Button android:textSize="@dimen/empty_view_action_text_size" android:textColor="@color/empty_action_text_color" android:gravity="center" android:id="@id/empty_action" android:background="@drawable/empty_action_bg" android:layout_width="wrap_content" android:layout_height="@dimen/empty_view_action_height" android:layout_marginTop="@dimen/empty_view_action_top_margin" android:fontFamily="mipro-demibold" android:paddingStart="@dimen/empty_view_action_padding_start" android:paddingEnd="@dimen/empty_view_action_padding_end" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

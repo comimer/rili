@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/calendar_event_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/detail_action_bar_style_center" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.miui.calendar.view.OnlineImageView android:id="@id/header_image" android:layout_width="fill_parent" android:layout_height="@dimen/calendar_event_header_image_height" android:layout_margin="@dimen/calendar_event_header_image_margin" android:src="@drawable/event_info_banner" style="@style/ImageStyle" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/calendar_picker_switcher_padding_left_right" android:layout_alignBottom="@id/header_image" android:layout_marginStart="@dimen/calendar_event_header_text_margin_horizontal" android:layout_marginEnd="@dimen/calendar_event_header_text_margin_horizontal">
+                    <TextView android:textSize="@dimen/calendar_event_header_countdown_number_size" android:textColor="@color/event_title_color" android:id="@id/days" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/event_title_color" android:ellipsize="end" android:id="@id/event_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/time" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_height="0.0dip" android:layout_weight="1.0" style="@style/eventInfoItemViewLastStyle">
+                    <TextView android:textSize="@dimen/double_line_list_primary_text_size" android:textColor="@color/card_header_title_text_color" android:text="@string/event_info_when" android:layout_weight="1.0" android:textDirection="locale" android:textAlignment="gravity" style="@style/eventInfoSubTitleStyle" />
+                    <TextView android:textSize="@dimen/list_secondary_text_size" android:textColor="@color/card_header_title_text_color_gray" android:id="@id/time_value" android:drawableEnd="@null" android:textDirection="locale" android:textAlignment="gravity" style="@style/eventInfoItemViewSpinnerStyle" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="53.0dip">
+                <LinearLayout android:layout_height="0.0dip" android:layout_weight="1.0" style="@style/eventInfoItemViewLastStyle">
+                    <TextView android:textSize="@dimen/double_line_list_primary_text_size" android:textColor="@color/card_header_title_text_color" android:text="@string/event_info_reminders_label_1" android:layout_weight="1.0" android:textDirection="locale" android:textAlignment="gravity" style="@style/eventInfoSubTitleStyle" />
+                    <TextView android:textSize="@dimen/list_secondary_text_size" android:textColor="@color/card_header_title_text_color_gray" android:id="@id/reminder_value" android:drawableEnd="@null" android:textDirection="locale" android:textAlignment="gravity" style="@style/eventInfoItemViewSpinnerStyle" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/alarm" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" style="@style/eventInfoItemViewLastStyle">
+                    <TextView android:textSize="@dimen/double_line_list_primary_text_size" android:textColor="@color/card_header_title_text_color" android:text="@string/pref_title_alarm_remind" android:layout_weight="1.0" android:textDirection="locale" android:textAlignment="gravity" style="@style/eventInfoSubTitleStyle" />
+                    <miuix.slidingwidget.widget.SlidingButton android:id="@id/is_alarm" android:contentDescription="@string/accessibility_alarm_remind" style="@style/eventInfoListItemSecondarySwitchStyle" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/repeat" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_height="0.0dip" android:layout_weight="1.0" style="@style/eventInfoItemViewLastStyle">
+                    <TextView android:textSize="@dimen/double_line_list_primary_text_size" android:textColor="@color/card_header_title_text_color" android:text="@string/event_info_repeat" android:layout_weight="1.0" android:textDirection="locale" android:textAlignment="gravity" style="@style/eventInfoSubTitleStyle" />
+                    <TextView android:textSize="@dimen/list_secondary_text_size" android:textColor="@color/card_header_title_text_color_gray" android:id="@id/repeat_value" android:drawableEnd="@null" android:textDirection="locale" android:textAlignment="gravity" style="@style/eventInfoItemViewSpinnerStyle" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

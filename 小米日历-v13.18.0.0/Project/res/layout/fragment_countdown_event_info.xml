@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.miui.calendar.view.CardView android:id="@id/card_view" android:background="@drawable/event_info_card_bg" android:focusable="true" android:layoutDirection="ltr" style="@style/EventCardStyle">
+        <RelativeLayout android:orientation="vertical" android:id="@id/image_container" android:background="#ff5f67e4" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/building_right_container" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/event_info_detail_countdown_right_margin_bottom" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true">
+                <ImageView android:id="@id/right_building_right_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_building_right_2_bg" android:layout_alignParentEnd="true" />
+                <ImageView android:id="@id/right_building_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_building_right_2" android:layout_marginEnd="-13.0dip" android:layout_alignParentEnd="true" />
+                <ImageView android:id="@id/right_building_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_building_right_1" android:layout_toStartOf="@id/right_building_right" />
+            </RelativeLayout>
+            <RelativeLayout android:orientation="horizontal" android:id="@id/building_left_container" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/event_info_detail_countdown_left_margin_bottom" android:layout_alignParentBottom="true" android:layout_marginEnd="100.0dip" android:layout_alignParentEnd="true">
+                <ImageView android:id="@id/building_shadow_bg" android:layout_width="100.0dip" android:layout_height="306.0dip" android:layout_alignParentEnd="true" />
+                <ImageView android:id="@id/building_left_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_building_left_1_bg" android:layout_toStartOf="@id/building_right" />
+                <ImageView android:id="@id/building_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_building_left_1" android:layout_toStartOf="@id/building_right" />
+                <ImageView android:id="@id/building_right_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_building_left_2_bg" android:layout_marginEnd="25.0dip" android:layout_alignParentEnd="true" />
+                <ImageView android:id="@id/building_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_building_left_2" android:layout_marginEnd="25.0dip" android:layout_alignParentEnd="true" />
+                <ImageView android:id="@id/building_highlight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:src="@drawable/ic_building_highlight" android:layout_alignStart="@id/building_left" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/content_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ticket_content_margin" android:layout_marginStart="@dimen/event_info_anniversary_title_margin_left">
+                <TextView android:textSize="24.0dip" android:textColor="@color/white" android:layout_gravity="start" android:id="@id/countdown_title" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fontFamily="miui-bold" android:textAlignment="viewStart" android:paddingEnd="125.0dip" android:layout_marginEnd="-100.0dip" />
+                <TextView android:textSize="@dimen/font_size_38" android:textColor="@color/white_70" android:layout_gravity="start" android:id="@id/countdown_date" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:fontFamily="miui-bold" android:textAlignment="viewStart" />
+                <TextView android:textSize="66.66998dip" android:textColor="@color/white" android:layout_gravity="start" android:id="@id/day_count" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/event_info_detail_countdown_margin_top" android:fontFamily="mitype" android:textAlignment="viewStart" android:paddingEnd="100.0dip" android:layout_marginEnd="@dimen/event_info_detail_countdown_margin_end" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/alarm_container" android:background="@drawable/event_info_alarm_btn_bg" android:layout_width="@dimen/game_image_height" android:layout_height="@dimen/tab_bg_radius" android:layout_marginBottom="@dimen/event_info_card_margin_end" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/event_info_anniversary_title_margin_left">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/alarm_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_event_info_alarm_started_white" android:layout_marginEnd="@dimen/month_holiday_rect_between_day" />
+                <TextView android:textSize="@dimen/alarm_text_size" android:textColor="@color/white_90" android:id="@id/alarm_status_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="mipro-medium" android:layout_marginEnd="@dimen/event_info_alarm_text_margin_end" />
+            </LinearLayout>
+        </RelativeLayout>
+    </com.miui.calendar.view.CardView>
+    <View android:id="@id/card_view_mask" android:background="@drawable/event_info_card_bg" style="@style/EventCardStyle" />
+</FrameLayout>

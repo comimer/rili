@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/widget_normal_agenda_ing_tip" />
+    <corners android:topLeftRadius="@dimen/widget_normal_agenda_item_corner" android:topRightRadius="@dimen/widget_normal_agenda_item_corner" android:bottomLeftRadius="@dimen/widget_normal_agenda_item_corner" android:bottomRightRadius="@dimen/widget_normal_agenda_item_corner" />
+</shape>

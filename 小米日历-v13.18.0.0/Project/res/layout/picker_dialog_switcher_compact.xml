@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/switcher" android:paddingLeft="@dimen/picker_switcher_padding_left_right" android:paddingRight="@dimen/picker_switcher_padding_left_right" android:paddingBottom="@dimen/normal_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/picker_switcher_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/switcher_label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/DoubleLineListPrimaryTextStyle" />
+    <miuix.slidingwidget.widget.SlidingButton android:id="@id/switcher_button" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

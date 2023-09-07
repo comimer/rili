@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/CardLayoutStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/home_card_class_title" android:layout_marginTop="@dimen/home_card_padding_top" android:layout_marginBottom="7.0dip" android:text="@string/todo_event" android:layout_marginStart="@dimen/large_margin" style="@style/HomeCardPrimarySmallTitleTextStyle" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <TextView android:textSize="13.099976sp" android:textColor="@color/list_secondary_text_color" android:id="@id/tv_other" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.899994dip" android:layout_marginBottom="27.299988dip" android:fontFamily="miui-bold" android:layout_marginStart="52.399994dip" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/card_dark_light_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <miuix.miuixbasewidget.widget.FilterSortView android:id="@id/tab_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/date_calculate_tab_margin_top" android:layout_marginBottom="@dimen/date_calculate_tab_margin_bottom" android:layout_marginStart="@dimen/date_calculate_tab_margin_start" android:layout_marginEnd="@dimen/date_calculate_tab_margin_end" />
+    <FrameLayout android:id="@id/main_frame" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

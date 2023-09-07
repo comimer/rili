@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/year_month_first_day_of_lunar_month" />
+    <corners android:radius="@dimen/action_bar_year_indicator_radius" />
+</shape>

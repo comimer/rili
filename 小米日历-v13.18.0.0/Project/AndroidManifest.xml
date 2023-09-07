@@ -1,0 +1,915 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="33" android:compileSdkVersionCodename="13" android:sharedUserLabel="@string/app_label" package="com.android.calendar" platformBuildVersionCode="33" platformBuildVersionName="13">
+    <permission android:name="com.miui.calendar.permission.READ_CALENDAR" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.miui.calendar.permission.WRITE_CALENDAR" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.android.calendar.permission.MIPUSH_RECEIVE" android:protectionLevel="signature"/>
+    <permission android:name="com.miui.calendar.permission.ALERT_REMINDER_LATER" android:protectionLevel="signatureOrSystem"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS_PRIVILEGED"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_SYNC_STATS"/>
+    <uses-permission android:name="com.google.android.googleapps.permission.GOOGLE_AUTH.mail"/>
+    <uses-permission android:name="com.xiaomi.xmsf.permission.PAYMENT"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.STATUS_BAR"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="miui.permission.USE_INTERNAL_GENERAL_API"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <uses-permission android:name="com.android.email.permission.ACCESS_PROVIDER"/>
+    <uses-permission android:name="com.android.calendar.permission.MIPUSH_RECEIVE"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS"/>
+    <uses-permission android:name="com.miui.calendar.permission.READ_CALENDAR"/>
+    <uses-permission android:name="com.miui.calendar.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="miui.permission.DUMP_CACHED_LOG"/>
+    <uses-permission android:name="com.miui.voiceassist.QUERY_ENABLE"/>
+    <uses-permission android:name="MediaStore.Images.Media.INTERNAL_CONTENT_URI"/>
+    <uses-permission android:name="MediaStore.Images.Media.EXTERNAL_CONTENT_URI"/>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT"/>
+    <uses-permission android:name="com.xiaomi.market.sdk.UPDATE"/>
+    <uses-permission android:name="com.mi.health.provider.permission.read_menstruation"/>
+    <uses-permission android:name="com.miui.securitycenter.permission.SYSTEM_PERMISSION_DECLARE"/>
+    <uses-permission android:name="com.miui.personalassistant.permission.WIDGET_READ_SETTINGS"/>
+    <uses-permission android:name="com.miui.personalassistant.permission.WIDGET_WRITE_SETTINGS"/>
+    <uses-permission android:name="org.dmfs.permission.READ_TASKS"/>
+    <uses-permission android:name="org.dmfs.permission.WRITE_TASKS"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <queries>
+        <package android:name="de.robv.android.xposed.installer"/>
+        <package android:name="com.saurik.substrate"/>
+        <package android:name="com.xiaomi.account"/>
+        <package android:name="com.xiaomi.controlscreen.account"/>
+        <package android:name="com.tencent.mm"/>
+        <package android:name="com.tencent.mobileqq"/>
+        <package android:name="com.facebook.katana"/>
+        <package android:name="com.sina.weibo"/>
+        <package android:name="com.xiaomi.smarthome"/>
+        <package android:name="com.miui.greenguard"/>
+        <package android:name="com.mi.health"/>
+        <package android:name="com.android.mms"/>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEND"/>
+        </intent>
+        <intent>
+            <action android:name="com.android.camera.action.CROP"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="com.miui.bugreport.permission.DUMP_CACHED_LOG"/>
+    <application android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:backupAgent="com.miui.calendar.backup.CalendarBackupAgent" android:configChanges="locale" android:extractNativeLibs="false" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher_calendar" android:label="@string/app_label" android:name="com.android.calendar.application.CalendarApplication" android:resizeableActivity="false" android:supportsRtl="true" android:taskAffinity="android.task.calendar" android:theme="@style/ApplicationTheme" android:uiOptions="splitActionBarWhenNarrow" android:usesCleartextTraffic="true">
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTop" android:name="com.miui.calendar.detail.SubscribeGroupActivity" android:screenOrientation="portrait" android:theme="@style/CalendarTheme.Settings">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="calendar.miui.com" android:pathPrefix="/subscribe/group" android:scheme="http"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="com.android.calendar.alerts.NotificationMiddleActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="adapt_force_start" android:value="true"/>
+        <meta-data android:name="miuiWidgetVersion" android:value="3"/>
+        <meta-data android:name="com.miui.bugreport.LOG_DIR" android:resource="@xml/log_paths"/>
+        <uses-library android:name="com.miui.system" android:required="false"/>
+        <meta-data android:name="com.google.android.backup.api_key" android:value="AEdPqrEAAAAIM256oVOGnuSel5QKDpL8je_T65ZI8rFnDinssA"/>
+        <meta-data android:name="required_permissions" android:value="@string/required_permissions"/>
+        <meta-data android:name="miui.supportRequiredModifiable" android:value="true"/>
+        <meta-data android:name="app_hide_enable" android:value="true"/>
+        <meta-data android:name="app_description_title" android:resource="@string/icon_remove_description_title"/>
+        <meta-data android:name="app_description_content" android:resource="@string/icon_remove_description_content"/>
+        <activity android:configChanges="keyboardHidden|layoutDirection|orientation|screenLayout|screenSize" android:exported="true" android:launchMode="singleTask" android:name="com.android.calendar.homepage.AllInOneActivity" android:screenOrientation="portrait" android:theme="@style/CalendarTheme.HomePage" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.APP_CALENDAR"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="time/epoch"/>
+                <data android:host="com.android.calendar"/>
+                <data android:scheme="content"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="functionindex" android:resource="@xml/functionindex"/>
+            <intent-filter>
+                <action android:name="mi.quicksearch.intent.action.RETRIEVE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="mi.quicksearch.hints" android:resource="@xml/mi_quicksearch_hints"/>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="calendar.miui.com" android:pathPrefix="/agenda/detail" android:scheme="http"/>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
+            <intent-filter>
+                <action android:name="com.android.calendar.main.views"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="com.android.calendar" android:pathPrefix="/view" android:scheme="calendar"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:exported="true" android:name="com.android.calendar.AllInOneActivity" android:targetActivity="com.android.calendar.homepage.AllInOneActivity"/>
+        <activity android:exported="false" android:name="com.miui.calendar.permission.RequestPermissionsActivity" android:screenOrientation="portrait" android:theme="@style/AlertDialog.Theme.Light"/>
+        <activity android:exported="true" android:label="@string/event_info_title" android:launchMode="singleTop" android:name="com.android.calendar.event.EventInfoActivity" android:screenOrientation="portrait" android:theme="@style/EventInfoActivityV2Theme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="vnd.android.cursor.item/event"/>
+            </intent-filter>
+            <meta-data android:name="catcher_not_fetch" android:value="true"/>
+        </activity>
+        <activity android:configChanges="uiMode" android:exported="true" android:label="@string/event_info_title" android:launchMode="singleTop" android:name="com.android.calendar.common.ShareActivity" android:theme="@style/EventInfoActivityV2Theme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.android.calendar.event.EditEventActivity" android:screenOrientation="portrait" android:theme="@style/Theme.DayNight.MIUIX">
+            <intent-filter>
+                <action android:name="android.intent.action.EDIT"/>
+                <action android:name="android.intent.action.INSERT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="vnd.android.cursor.item/event"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.EDIT"/>
+                <action android:name="android.intent.action.INSERT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="vnd.android.cursor.dir/event"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="true" android:label="@string/app_label" android:name="com.android.calendar.event.GoogleCalendarUriIntentFilter" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter android:priority="50">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.google.com" android:pathPrefix="/calendar/event" android:scheme="http"/>
+                <data android:host="www.google.com" android:pathPrefix="/calendar/event" android:scheme="https"/>
+                <data android:host="www.google.com" android:pathPattern="/calendar/hosted/.*/event" android:scheme="http"/>
+                <data android:host="www.google.com" android:pathPattern="/calendar/hosted/.*/event" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="@string/setting_accounts" android:name="com.android.calendar.selectcalendars.SelectVisibleCalendarsActivity" android:screenOrientation="portrait" android:theme="@style/CalendarTheme.SelectVisibleCalendarsActivityDayNightTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="calendar.miui.com" android:pathPrefix="/setting/account" android:scheme="http"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:label="@string/preferences_title" android:name="com.android.calendar.settings.CalendarActionbarSettingsActivity" android:screenOrientation="portrait" android:theme="@style/CalendarTheme.Settings">
+            <intent-filter android:priority="40">
+                <action android:name="miui.intent.action.APP_SETTINGS"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:label="@string/preferences_title" android:name="com.android.calendar.settings.ReminderModeActivity" android:screenOrientation="portrait" android:theme="@style/CalendarTheme.Settings"/>
+        <activity android:exported="true" android:label="@string/preferences_title" android:name="com.android.calendar.settings.PopupAlertSettingActivity" android:screenOrientation="portrait" android:theme="@style/Theme.DayNight.MIUIX"/>
+        <activity android:exported="true" android:label="@string/preferences_title" android:name="com.android.calendar.settings.AlarmDefaultEventPreferencesActivity" android:screenOrientation="portrait" android:theme="@style/CalendarTheme.Settings"/>
+        <activity android:exported="true" android:label="@string/setting_features_title" android:name="com.android.calendar.settings.FeatureSettingsActionbarActivity" android:screenOrientation="portrait" android:theme="@style/CalendarTheme.Settings"/>
+        <activity android:exported="true" android:label="@string/setting_sms_import" android:name="com.android.calendar.settings.SmsImportActionbarActivity" android:screenOrientation="portrait" android:theme="@style/CalendarTheme.Settings"/>
+        <activity android:exported="true" android:label="@string/time_zone" android:name="com.android.calendar.settings.TimeZoneActionbarActivity" android:screenOrientation="portrait" android:theme="@style/CalendarTheme.Settings"/>
+        <activity android:exported="true" android:label="@string/setting_user_experience" android:name="com.android.calendar.settings.UserExperienceActionBarActivity" android:screenOrientation="portrait" android:theme="@style/CalendarTheme.Settings"/>
+        <activity android:exported="true" android:label="@string/privacy_and_permissions" android:name="com.android.calendar.settings.PrivacyPermissionActivity" android:screenOrientation="portrait" android:theme="@style/CalendarTheme.Settings"/>
+        <activity android:exported="true" android:label="@string/setting_title_about" android:name="com.android.calendar.settings.AboutCalendarActivity" android:screenOrientation="portrait" android:theme="@style/CalendarTheme.Settings"/>
+        <activity android:exported="true" android:label="@string/permission_description" android:name="com.android.calendar.settings.PermissionDescriptionActivity" android:screenOrientation="portrait" android:theme="@style/CalendarTheme.Settings"/>
+        <activity android:exported="true" android:label="@string/preferences_title" android:launchMode="singleTask" android:name="com.android.calendar.settings.NoPermissionCalendarActivity" android:screenOrientation="portrait" android:theme="@style/CalendarTheme.Settings"/>
+        <activity android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTop" android:name="com.android.calendar.dragview.DragViewActivity" android:resizeableActivity="false" android:theme="@style/CalendarTheme.DragViewActivityTheme"/>
+        <activity android:excludeFromRecents="true" android:exported="true" android:name="com.android.calendar.widget.MonthWidgetSettings" android:theme="@style/CalendarTheme.TranslateBackgroundAlert">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.android.calendar.common.CalendarRecentSuggestionsProvider" android:name="com.android.calendar.common.CalendarRecentSuggestionsProvider"/>
+        <provider android:authorities="com.android.calendar.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.miui.calendar.util.CompatFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <activity android:excludeFromRecents="true" android:exported="true" android:launchMode="singleInstance" android:name="com.android.calendar.alerts.AlertActivity" android:resizeableActivity="false" android:theme="@style/CalendarTheme.ReminderAlertActivity"/>
+        <receiver android:exported="true" android:name="com.android.calendar.alerts.AlertReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.EVENT_REMINDER"/>
+                <data android:scheme="content"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PROVIDER_CHANGED"/>
+                <data android:scheme="content"/>
+                <data android:host="com.android.calendar"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.android.calendar.alerts.AlertLaterReceiver" android:permission="com.miui.calendar.permission.ALERT_REMINDER_LATER"/>
+        <service android:exported="false" android:name="com.android.calendar.alerts.DismissAlarmsService"/>
+        <receiver android:exported="true" android:icon="@drawable/widget_agenda_icon" android:label="@string/agenda_view" android:name="com.android.calendar.widget.AgendaWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.android.calendar.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+                <action android:name="com.miui.action.MIDNIGHT"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PROVIDER_CHANGED"/>
+                <data android:scheme="content"/>
+                <data android:host="com.android.calendar"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/agenda_widget_info"/>
+        </receiver>
+        <receiver android:exported="true" android:icon="@drawable/widget_month_icon" android:label="@string/gadget_title" android:name="com.android.calendar.widget.MonthWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.android.calendar.APPWIDGET_UPDATE"/>
+                <action android:name="miui.intent.action.MONTH_CHANGED_NEXT"/>
+                <action android:name="miui.intent.action.MONTH_CHANGED_PREV"/>
+                <action android:name="miui.intent.action.MONTH_VIEW_REFRESH"/>
+                <action android:name="com.miui.weather2.FROM_FOREGROUND_TO_WAKE_BACKGROUND"/>
+            </intent-filter>
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+                <action android:name="com.miui.action.MIDNIGHT"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PROVIDER_CHANGED"/>
+                <data android:scheme="content"/>
+                <data android:host="com.android.calendar"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.android.calendar.APPWIDGET_SCHEDULED_UPDATE"/>
+                <data android:scheme="content"/>
+                <data android:host="com.android.calendar"/>
+                <data android:mimeType="vnd.android.data/update"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/month_widget_info"/>
+        </receiver>
+        <receiver android:exported="true" android:name="com.android.calendar.widget.AgendaWidgetService$CalendarFactory">
+            <intent-filter>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+                <action android:name="com.miui.action.MIDNIGHT"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PROVIDER_CHANGED"/>
+                <data android:scheme="content"/>
+                <data android:host="com.android.calendar"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.android.calendar.APPWIDGET_SCHEDULED_UPDATE"/>
+                <data android:scheme="content"/>
+                <data android:host="com.android.calendar"/>
+                <data android:mimeType="vnd.android.data/update"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:icon="@drawable/widget_agenda_icon" android:label="@string/spec_agenda_view" android:name="com.android.calendar.widget.SpecialAgendaWidgetProvider" android:process=":widgetProvider">
+            <meta-data android:name="miuiWidgetRefresh" android:value="exposure"/>
+            <meta-data android:name="miuiWidgetRefreshMinInterval" android:value="60000"/>
+            <meta-data android:name="miuiWidget" android:value="true"/>
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="miui.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.android.calendar.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+                <action android:name="com.miui.action.MIDNIGHT"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PROVIDER_CHANGED"/>
+                <data android:scheme="content"/>
+                <data android:host="com.android.calendar"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.android.calendar.APPWIDGET_SCHEDULED_UPDATE"/>
+                <data android:scheme="content"/>
+                <data android:host="com.android.calendar"/>
+                <data android:mimeType="vnd.android.data/update"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_special_agenda_info"/>
+        </receiver>
+        <receiver android:exported="true" android:icon="@drawable/widget_agenda_icon" android:label="@string/near_agenda_view" android:name="com.android.calendar.widget.NormalAgendaWidgetProvider" android:process=":widgetProvider">
+            <meta-data android:name="miuiWidgetRefresh" android:value="exposure"/>
+            <meta-data android:name="miuiWidgetRefreshMinInterval" android:value="60000"/>
+            <meta-data android:name="miuiWidget" android:value="true"/>
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="miui.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.android.calendar.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+                <action android:name="com.miui.action.MIDNIGHT"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PROVIDER_CHANGED"/>
+                <data android:scheme="content"/>
+                <data android:host="com.android.calendar"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.android.calendar.APPWIDGET_SCHEDULED_UPDATE"/>
+                <data android:scheme="content"/>
+                <data android:host="com.android.calendar"/>
+                <data android:mimeType="vnd.android.data/update"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_normal_agenda_info"/>
+        </receiver>
+        <receiver android:exported="true" android:icon="@drawable/widget_agenda_icon" android:label="@string/near_agenda_view" android:name="com.android.calendar.widget.NearEventAppWidget" android:process=":widgetProvider">
+            <meta-data android:name="miuiWidgetRefresh" android:value="exposure"/>
+            <meta-data android:name="miuiWidgetRefreshMinInterval" android:value="60000"/>
+            <meta-data android:name="miuiWidget" android:value="true"/>
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="miui.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.android.calendar.APPWIDGET_UPDATE"/>
+                <action android:name="miui.intent.action.START_WEEK_DAY_CHANGED"/>
+            </intent-filter>
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+                <action android:name="com.miui.action.MIDNIGHT"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PROVIDER_CHANGED"/>
+                <data android:scheme="content"/>
+                <data android:host="com.android.calendar"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.android.calendar.APPWIDGET_SCHEDULED_UPDATE"/>
+                <data android:scheme="content"/>
+                <data android:host="com.android.calendar"/>
+                <data android:mimeType="vnd.android.data/update"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_near_event_info"/>
+        </receiver>
+        <receiver android:exported="true" android:icon="@drawable/widget_agenda_icon" android:label="@string/date_view" android:name="com.android.calendar.widget.DateWidgetProvider" android:process=":widgetProvider">
+            <meta-data android:name="miuiWidgetRefresh" android:value="exposure"/>
+            <meta-data android:name="miuiWidget" android:value="true"/>
+            <meta-data android:name="miuiWidgetRefreshMinInterval" android:value="60000"/>
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="miui.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.android.calendar.APPWIDGET_UPDATE"/>
+                <action android:name="miui.intent.action.START_WEEK_DAY_CHANGED"/>
+            </intent-filter>
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+                <action android:name="com.miui.action.MIDNIGHT"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_date_info"/>
+        </receiver>
+        <receiver android:exported="true" android:icon="@drawable/widget_agenda_icon" android:label="@string/date_view" android:name="com.android.calendar.widget.SmallDateWidget" android:process=":widgetProvider">
+            <meta-data android:name="miuiWidgetRefresh" android:value="exposure"/>
+            <meta-data android:name="miuiWidget" android:value="true"/>
+            <meta-data android:name="miuiWidgetRefreshMinInterval" android:value="60000"/>
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.android.calendar.APPWIDGET_UPDATE"/>
+                <action android:name="miui.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+                <action android:name="com.miui.action.MIDNIGHT"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_small_date_info"/>
+        </receiver>
+        <receiver android:exported="true" android:icon="@drawable/widget_agenda_icon" android:label="@string/count_down_date_view" android:name="com.android.calendar.widget.CountDownAppWidget" android:process=":widgetProvider">
+            <meta-data android:name="miuiWidgetRefresh" android:value="exposure"/>
+            <meta-data android:name="miuiWidget" android:value="true"/>
+            <meta-data android:name="miuiWidgetRefreshMinInterval" android:value="60000"/>
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="miui.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.android.calendar.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+                <action android:name="com.miui.action.MIDNIGHT"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PROVIDER_CHANGED"/>
+                <data android:scheme="content"/>
+                <data android:host="com.android.calendar"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.android.calendar.APPWIDGET_SCHEDULED_UPDATE"/>
+                <data android:scheme="content"/>
+                <data android:host="com.android.calendar"/>
+                <data android:mimeType="vnd.android.data/update"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_count_down_info"/>
+        </receiver>
+        <receiver android:exported="true" android:icon="@drawable/widget_month_icon" android:label="@string/date_view" android:name="com.android.calendar.widget.MonthWidgetProviderNew" android:process=":widgetProvider">
+            <meta-data android:name="miuiWidgetRefresh" android:value="exposure"/>
+            <meta-data android:name="miuiWidget" android:value="true"/>
+            <meta-data android:name="miuiWidgetRefreshMinInterval" android:value="60000"/>
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="miui.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.android.calendar.APPWIDGET_UPDATE"/>
+                <action android:name="miui.intent.action.MONTH_VIEW_REFRESH"/>
+                <action android:name="miui.intent.action.START_WEEK_DAY_CHANGED"/>
+            </intent-filter>
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+                <action android:name="com.miui.action.MIDNIGHT"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_month_info_new"/>
+        </receiver>
+        <service android:exported="false" android:name="com.android.calendar.widget.AgendaWidgetService" android:permission="android.permission.BIND_REMOTEVIEWS"/>
+        <service android:exported="false" android:name="com.android.calendar.widget.MonthWidgetService" android:permission="android.permission.BIND_REMOTEVIEWS"/>
+        <service android:exported="false" android:name="com.android.calendar.widget.MonthWidgetEventService" android:permission="android.permission.BIND_REMOTEVIEWS"/>
+        <service android:exported="false" android:name="com.android.calendar.widget.MonthWidgetServiceNew" android:permission="android.permission.BIND_REMOTEVIEWS" android:process=":widgetProvider"/>
+        <service android:exported="false" android:name="com.android.calendar.widget.NearEventWidgetService" android:permission="android.permission.BIND_REMOTEVIEWS" android:process=":widgetProvider"/>
+        <service android:name="com.android.calendar.common.AsyncQueryServiceHelper"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTop" android:name="com.miui.calendar.huangli.HuangLiDetailActivity" android:screenOrientation="portrait" android:theme="@style/CalendarThemeStyle.HuangLi">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="calendar.miui.com" android:pathPrefix="/huangli/detail" android:scheme="http"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTop" android:name="com.miui.calendar.detail.CardDetailActivity" android:screenOrientation="portrait" android:theme="@style/CalendarTheme.SubscribeCardDetailActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="calendar.miui.com" android:pathPrefix="/card/detail" android:scheme="http"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:excludeFromRecents="true" android:exported="true" android:label="@string/repeat_activity_label" android:launchMode="singleTop" android:name="com.miui.calendar.repeats.RepeatActivity" android:screenOrientation="portrait" android:theme="@style/CalendarTheme.Settings"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:excludeFromRecents="true" android:exported="true" android:label="@string/repeat_custom_activity_label" android:launchMode="singleTop" android:name="com.miui.calendar.repeats.CustomRepeatActivity" android:screenOrientation="portrait" android:theme="@style/CalendarTheme.Settings"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:excludeFromRecents="true" android:exported="true" android:label="@string/repeat_end_label" android:launchMode="singleTop" android:name="com.miui.calendar.repeats.RepeatEndActivity" android:screenOrientation="portrait" android:theme="@style/CalendarTheme.Settings"/>
+        <provider android:authorities="com.miui.calendar" android:exported="true" android:name="com.miui.calendar.provider.MiuiCalendarProvider"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:excludeFromRecents="true" android:exported="true" android:label="@string/horoscope_select_activity_label" android:launchMode="singleTop" android:name="com.miui.calendar.detail.HoroscopeSelectActivity" android:screenOrientation="portrait" android:theme="@style/CalendarThemeStyle.NewActionBar"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:excludeFromRecents="true" android:exported="true" android:label="@string/fortune_label" android:launchMode="singleTop" android:name="com.miui.calendar.detail.FortuneSettingsActivity" android:screenOrientation="portrait" android:theme="@style/CalendarTheme.FortuneSettings"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:excludeFromRecents="true" android:exported="true" android:label="@string/limit_setting_label" android:launchMode="singleTop" android:name="com.miui.calendar.limit.LimitSettingsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.DayNight.MIUIX"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTop" android:name="com.android.calendar.selectcalendars.AccountSettingsActivity" android:screenOrientation="portrait" android:theme="@style/CalendarThemeStyle.NewActionBar"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:excludeFromRecents="true" android:exported="true" android:label="@string/shift_setting_label" android:launchMode="singleTop" android:name="com.miui.calendar.shift.ShiftSettingsActivity" android:screenOrientation="portrait" android:theme="@style/CalendarTheme.Settings"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTop" android:name="com.miui.calendar.holiday.HolidayDetailActivity" android:screenOrientation="portrait" android:theme="@style/Theme.DayNight.MIUIX">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="calendar.miui.com" android:pathPrefix="/holiday/detail" android:scheme="http"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.android.calendar.birthday.ContactBirthdayActivity" android:screenOrientation="portrait" android:theme="@style/Theme.DayNight.MIUIX"/>
+        <activity android:exported="true" android:name="com.android.calendar.anniversary.AnniversaryInfoActivity" android:parentActivityName="com.android.calendar.homepage.AllInOneActivity" android:theme="@style/EventInfoActivityV2Theme"/>
+        <activity android:exported="true" android:name="com.android.calendar.countdown.CountdownInfoActivity" android:parentActivityName="com.android.calendar.homepage.AllInOneActivity" android:theme="@style/EventInfoActivityV2Theme"/>
+        <service android:exported="false" android:name="com.android.calendar.common.CacheService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="com.miui.calendar.detail.UpdateUserCardService"/>
+        <service android:exported="false" android:name="com.miui.calendar.insertevent.InsertEventService"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:excludeFromRecents="true" android:exported="true" android:launchMode="singleInstance" android:name="com.miui.calendar.insertevent.InsertEventActivity" android:theme="@style/CalendarTheme.NoTitle">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="calendar.miui.com" android:pathPrefix="/event/insert" android:scheme="http"/>
+            </intent-filter>
+        </activity>
+        <receiver android:exported="true" android:name="com.miui.calendar.job.CalendarJobReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="com.miui.action.MIDNIGHT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.android.calendar.common.LocaleChangeReceiver">
+            <intent-filter android:priority="1100">
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.miui.calendar.job.RemoteJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="true" android:name="com.miui.calendar.job.LimitJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="true" android:name="com.miui.calendar.job.StatJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="true" android:name="com.miui.calendar.job.StatDailyJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="true" android:name="com.miui.calendar.job.DaysOffJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="true" android:name="com.miui.calendar.job.DataMigrationAnniversaryJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:launchMode="singleTop" android:name="com.miui.calendar.event.travel.FlightDetailActivity" android:theme="@style/EventInfoActivityV2Theme" android:uiOptions="splitActionBarWhenNarrow">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="calendar.miui.com" android:pathPrefix="/flight/detail" android:scheme="http"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:launchMode="singleTask" android:name="com.miui.calendar.event.travel.TrainDetailActivity" android:theme="@style/EventInfoActivityV2Theme" android:uiOptions="splitActionBarWhenNarrow">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="calendar.miui.com" android:pathPrefix="/train/detail" android:scheme="http"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:launchMode="standard" android:name="com.android.calendar.event.EditTrainEventActivity" android:screenOrientation="portrait" android:theme="@style/Theme.DayNight.MIUIX">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="calendar.miui.com" android:pathPrefix="/train/edit" android:scheme="http"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:launchMode="standard" android:name="com.miui.calendar.event.travel.EmptyTravelActivity" android:theme="@style/CalendarTheme.NoTitle">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="travel.default" android:path="" android:scheme="calendar"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:launchMode="standard" android:name="com.miui.calendar.event.credit.CreditDetailActivity" android:theme="@style/EventInfoActivityV2Theme" android:uiOptions="splitActionBarWhenNarrow">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="calendar.miui.com" android:pathPrefix="/credit/detail" android:scheme="http"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:launchMode="standard" android:name="com.miui.calendar.event.loan.LoanDetailActivity" android:theme="@style/EventInfoActivityV2Theme" android:uiOptions="splitActionBarWhenNarrow">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="calendar.miui.com" android:pathPrefix="/loan/detail" android:scheme="http"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:launchMode="standard" android:name="com.miui.calendar.event.movie.MovieDetailActivity" android:theme="@style/EventInfoActivityV2Theme" android:uiOptions="splitActionBarWhenNarrow">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="calendar.miui.com" android:pathPrefix="/movie/detail" android:scheme="http"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:launchMode="standard" android:name="com.miui.calendar.event.hotel.HotelDetailActivity" android:theme="@style/EventInfoActivityV2Theme" android:uiOptions="splitActionBarWhenNarrow">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="calendar.miui.com" android:pathPrefix="/hotel/detail" android:scheme="http"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:launchMode="standard" android:name="com.miui.calendar.event.gas.GasBillDetailActivity" android:theme="@style/EventInfoActivityV2Theme" android:uiOptions="splitActionBarWhenNarrow">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="calendar.miui.com" android:pathPrefix="/gas_bill/detail" android:scheme="http"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:launchMode="standard" android:name="com.miui.calendar.event.electricity.ElectricityBillDetailActivity" android:theme="@style/EventInfoActivityV2Theme" android:uiOptions="splitActionBarWhenNarrow">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="calendar.miui.com" android:pathPrefix="/electricity_bill/detail" android:scheme="http"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTop" android:name="com.miui.calendar.limit.LimitDetailActivity" android:screenOrientation="portrait" android:theme="@style/CalendarThemeStyle.NewActionBar"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTop" android:name="com.miui.calendar.shift.ShiftDetailActivity" android:screenOrientation="portrait" android:theme="@style/CalendarThemeStyle.NewActionBar"/>
+        <activity android:exported="false" android:label=" " android:launchMode="singleTop" android:name="com.miui.calendar.web.CalendarWebViewActivity" android:screenOrientation="portrait" android:theme="@style/CalendarTheme.CalendarDayNightTheme.Web">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="webview" android:path="" android:scheme="calendar"/>
+            </intent-filter>
+        </activity>
+        <receiver android:exported="true" android:name="com.miui.calendar.sms.SmsReceiver" android:permission="com.xiaomi.permission.ACCESS_MMS_NETWORK_STATE">
+            <intent-filter>
+                <action android:name="com.miui.smsextra.action_sms_receiver"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.miui.calendar.ad.DownloadInstallReceiver">
+            <intent-filter>
+                <action android:name="com.xiaomi.market.DOWNLOAD_INSTALL_RESULT"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.miui.calendar.holiday.HolidayService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="com.miui.calendar.holiday.CommonJobIntentService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="com.miui.calendar.alerts.AlertMigrationService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:excludeFromRecents="true" android:exported="true" android:label="@string/menu_reminder_preferences" android:launchMode="singleTop" android:name="com.android.calendar.event.NewEditReminderActivity" android:screenOrientation="portrait" android:theme="@style/CalendarTheme.Settings"/>
+        <service android:exported="true" android:name="com.miui.calendar.thirdparty.ThirdPartyEventService">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="com.miui.calendar.thirdparty.ThirdPartyEventService"/>
+            </intent-filter>
+        </service>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:excludeFromRecents="true" android:exported="true" android:launchMode="singleInstance" android:name="com.miui.calendar.thirdparty.ThirdPartyEventActivity" android:theme="@style/CalendarTheme.NoTitle"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:excludeFromRecents="true" android:exported="true" android:launchMode="singleInstance" android:name="com.miui.calendar.event.travel.FlightCheckInActivity" android:theme="@style/CalendarTheme.NoTitle">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="calendar.miui.com" android:pathPrefix="/flight/checkin" android:scheme="http"/>
+            </intent-filter>
+        </activity>
+        <service android:exported="false" android:name="com.miui.calendar.event.travel.FlightCheckInService"/>
+        <receiver android:exported="true" android:name="com.miui.unifiedAdSdk.UpdateBroadCast" android:permission="miui.permission.USE_INTERNAL_GENERAL_API">
+            <intent-filter>
+                <action android:name="miui.intent.action.ad.UNIFIED_AD_UPDATING"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="true" android:label="@string/date_calculate_result" android:name="com.android.calendar.datecalculate.DateCalculateResultActivity" android:screenOrientation="portrait" android:theme="@style/CalendarTheme.DateCalculateResultActivityDayNightTheme"/>
+        <activity android:exported="true" android:label="@string/date_calculate_result" android:name="com.android.calendar.datecalculate.DateIntervalResultActivity" android:screenOrientation="portrait" android:theme="@style/CalendarTheme.DateCalculateResultActivityDayNightTheme"/>
+        <activity android:exported="true" android:label="@string/date_calculate" android:launchMode="singleTask" android:name="com.android.calendar.datecalculate.DateCalculateInfoActivity" android:screenOrientation="portrait" android:theme="@style/Theme.DayNight.MIUIX">
+            <intent-filter>
+                <action android:name="com.android.calendar.date.calculate"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="com.android.calendar" android:pathPrefix="/date/calculate/tab" android:scheme="calendar"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:label="@string/search_events" android:launchMode="singleTop" android:name="com.miui.calendar.search.EventSearchActivity" android:screenOrientation="portrait" android:theme="@style/CalendarTheme.SmallTitleActivityTheme" android:windowSoftInputMode="stateVisible">
+            <intent-filter>
+                <action android:name="com.android.calendar.events.search"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="true" android:label="@string/search_events" android:launchMode="singleTop" android:name="com.miui.calendar.search.SearchDetailsActivity" android:screenOrientation="portrait" android:theme="@style/CalendarTheme.SmallTitleActivityThemeMenu"/>
+        <activity android:exported="true" android:name="com.android.calendar.event.AttendeesActivity" android:screenOrientation="portrait" android:theme="@style/Theme.DayNight"/>
+        <activity android:exported="true" android:name="com.android.calendar.ddauth.DDAuthActivity" android:screenOrientation="portrait" android:theme="@style/Theme.DayNight"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:label="@string/setting_import_events" android:launchMode="singleTop" android:name="com.miui.calendar.sync.NewEventImportActivity" android:screenOrientation="portrait" android:theme="@style/CalendarTheme.SelectVisibleCalendarsActivityDayNightTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="com.android.calendar" android:pathPrefix="/event/import" android:scheme="calendar"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:launchMode="singleTop" android:name="com.miui.calendar.sync.ics.IcsFileImportActivity" android:screenOrientation="portrait" android:theme="@style/Theme.DayNight.MIUIX">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/calendar" android:scheme="content"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:launchMode="singleTop" android:name="com.miui.calendar.sync.ics.IcsUrlSubscribeActivity" android:screenOrientation="portrait" android:theme="@style/Theme.DayNight.MIUIX">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="*" android:pathPattern=".*.ics" android:scheme="file"/>
+                <data android:host="*" android:pathPattern=".*..*.ics" android:scheme="file"/>
+                <data android:host="*" android:pathPattern=".*..*..*.ics" android:scheme="file"/>
+                <data android:host="*" android:pathPattern=".*.ics" android:scheme="http"/>
+                <data android:host="*" android:pathPattern=".*..*.ics" android:scheme="http"/>
+                <data android:host="*" android:pathPattern=".*..*..*.ics" android:scheme="http"/>
+                <data android:host="*" android:pathPattern=".*.ics" android:scheme="https"/>
+                <data android:host="*" android:pathPattern=".*..*.ics" android:scheme="https"/>
+                <data android:host="*" android:pathPattern=".*..*..*.ics" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:mimeType="text/calendar" android:scheme="file"/>
+                <data android:mimeType="text/calendar" android:scheme="http"/>
+                <data android:mimeType="text/calendar" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="webcal"/>
+                <data android:scheme="webcals"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:launchMode="singleTop" android:name="com.miui.calendar.sync.protocol.CalDavLoginActivity" android:screenOrientation="portrait" android:theme="@style/Theme.DayNight.MIUIX"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.android.calendar.common.retrofit.MockBroadcastReceiver" android:permission="com.android.calendardebug.permission.MOCK">
+            <intent-filter>
+                <action android:name="com.miui.calendardebug.sample.MOCK_NET_CLEAR"/>
+                <action android:name="com.miui.calendardebug.sample.MOCK_NET_ADD"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.android.calendar.common.MidnightReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+                <action android:name="com.miui.action.MIDNIGHT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.android.calendar.common.ShortcutsReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="com.miui.action.MIDNIGHT"/>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PROVIDER_CHANGED"/>
+                <data android:scheme="content"/>
+                <data android:host="com.android.calendar"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.miui.calendar.alarm.CalendarAlarmReceiver">
+            <intent-filter>
+                <action android:name="com.miui.action.CALENDARALARM"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.android.calendar.settings.CalendarSettingsSearchProvider" android:exported="true" android:grantUriPermissions="true" android:multiprocess="false" android:name="com.android.calendar.settings.CalendarSettingsSearchProvider">
+            <intent-filter>
+                <action android:name="miui.intent.action.SETTINGS_SEARCH_PROVIDER"/>
+            </intent-filter>
+        </provider>
+        <receiver android:exported="true" android:name="com.market.sdk.DownloadCompleteReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.miui.zeus.landingpage.sdk.activity.WebViewActivity" android:theme="@android:style/Theme.Holo.NoActionBar"/>
+        <activity android:alwaysRetainTaskState="true" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:launchMode="standard" android:name="com.android.dingtalk.openauth.web.AuthWebviewActivity" android:screenOrientation="behind" android:theme="@android:style/Theme.NoTitleBar" android:uiOptions="none" android:windowSoftInputMode="adjustResize" android:windowTranslucentStatus="true"/>
+        <service android:exported="false" android:label="@string/app_name" android:name="com.android.calendar.syncer.account.AccountAuthenticatorService">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator"/>
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/account_authenticator"/>
+        </service>
+        <service android:exported="true" android:label="@string/app_name" android:name="com.android.calendar.syncer.adapter.CalendarSyncAdapterService">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter"/>
+            </intent-filter>
+            <meta-data android:name="android.content.SyncAdapter" android:resource="@xml/sync_calendars"/>
+        </service>
+        <service android:name="com.android.calendar.syncer.CalDavService"/>
+        <service android:name="at.bitfire.cert4android.CustomCertService"/>
+        <activity android:excludeFromRecents="true" android:exported="true" android:label="@string/certificate_notification_connection_security" android:launchMode="singleInstance" android:name="at.bitfire.cert4android.TrustCertificateActivity" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <service android:exported="false" android:name="com.xiaomi.passport.accountmanager.OwnAppXiaomiAccountAuthenticatorService">
+            <intent-filter>
+                <action android:name="com.xiaomi.accounts.AccountAuthenticator"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="com.xiaomi.account.service.AppAccountExchangeService">
+            <intent-filter>
+                <action android:name="com.xiaomi.account.action.BIND_ACCOUNT_EXCHANGE_SERVICE_V2"/>
+            </intent-filter>
+        </service>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:exported="false" android:name="com.xiaomi.passport.ui.internal.PickCountryCodeActivity" android:theme="@style/PassportTheme.NoActionBar"/>
+        <activity android:exported="false" android:label="" android:name="com.xiaomi.passport.ui.page.UserAvatarUpdateActivity" android:screenOrientation="portrait" android:theme="@style/PassportTheme.Transparent"/>
+        <provider android:authorities="com.android.calendar.passport.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.xiaomi.passport.ui.settings.provider.PassportFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/passport_provider_file_paths"/>
+        </provider>
+        <activity android:exported="true" android:name="com.xiaomi.passport.ui.sns.WXEntryActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.xiaomi.passport.ui.internal.ConfirmCredentialActivity" android:theme="@style/Passport.Theme.Light.Dialog.NoTitle" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="com.xiaomi.account.action.XIAOMI_ACCOUNT_QUICK_LOGIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.xiaomi.passport.ui.page.AccountLoginActivity" android:screenOrientation="behind" android:theme="@style/PassportTheme.NoActionBar" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:label="@string/passport_account_user_details" android:name="com.xiaomi.passport.ui.page.UserInfoActivity" android:theme="@style/PassportTheme.NoActionBar"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.xiaomi.passport.ui.internal.PassportJsbWebViewActivity" android:theme="@style/PassportTheme.NoActionBar"/>
+        <meta-data android:name="market_sdk_version" android:value="3.2.26"/>
+        <meta-data android:name="miuixpreference" android:value="1.0"/>
+        <meta-data android:name="appcompat" android:value="1.0"/>
+        <meta-data android:name="miuix.search" android:value="1.0"/>
+        <meta-data android:name="miuix.search.common" android:value="1.0"/>
+        <meta-data android:name="springback" android:value="2.0"/>
+        <meta-data android:name="recyclerview" android:value="2.0"/>
+        <meta-data android:name="com.miui.maml.sdk" android:value="true"/>
+        <meta-data android:name="miuixstretchablewidget" android:value="1.0"/>
+        <meta-data android:name="pickerwidget" android:value="1.0"/>
+        <meta-data android:name="log" android:value="1.0"/>
+        <meta-data android:name="miuixbasewidget" android:value="1.0"/>
+        <meta-data android:name="textutilities" android:value="2.0"/>
+        <meta-data android:name="popupwidget" android:value="1.0"/>
+        <meta-data android:name="androidbasewidget" android:value="1.0"/>
+        <meta-data android:name="graphics" android:value="2.0"/>
+        <meta-data android:name="nest" android:value="2.0"/>
+        <meta-data android:name="slidingwidget" android:value="1.0"/>
+        <meta-data android:name="haptic" android:value="1.0"/>
+        <meta-data android:name="core" android:value="2.0"/>
+        <meta-data android:name="recyclerview_animator" android:value="2.0"/>
+        <meta-data android:name="dynamicoverscroller" android:value="2.0"/>
+        <meta-data android:name="folme" android:value="2.0"/>
+        <meta-data android:name="blurdrawable" android:value="1.0"/>
+        <meta-data android:name="devicebaseinfo" android:value="1.0"/>
+        <meta-data android:name="cardview" android:value="1.0"/>
+        <meta-data android:name="viewpager" android:value="2.0"/>
+        <meta-data android:name="spring" android:value="1.0"/>
+        <provider android:authorities="com.android.calendar.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+        </provider>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.miui.bugreport.DEFAULT_LOG_DIR" android:resource="@xml/default_log_paths"/>
+        <provider android:authorities="com.android.calendar.provider.bugreport" android:exported="true" android:name="com.miui.bugreport.logprovider.DumpLogProvider" android:permission="com.miui.bugreport.permission.DUMP_CACHED_LOG">
+            <intent-filter>
+                <action android:name="com.miui.bugreport.intent.ACTION_DUMP_CACHED_LOG"/>
+            </intent-filter>
+        </provider>
+        <meta-data android:name="animation" android:value="1.0"/>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <meta-data android:name="smooth" android:value="1.0"/>
+    </application>
+</manifest>

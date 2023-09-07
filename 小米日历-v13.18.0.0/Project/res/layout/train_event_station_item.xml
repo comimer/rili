@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/card_bg_color_n" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_card_info_item_height" android:paddingEnd="@dimen/dimen_card_info_padding_end">
+        <ImageView android:id="@id/icon" android:layout_width="@dimen/dimen_card_info_padding_start" android:layout_height="@dimen/dimen_card_info_padding_start" android:scaleType="center" android:contentDescription="@null" />
+        <TextView android:textSize="@dimen/font_size_50" android:textColor="@color/train_event_text_color" android:gravity="center_vertical" android:id="@id/station_name" android:layout_width="@dimen/train_event_station_header_station_min_width" android:layout_height="wrap_content" android:minHeight="66.0px" android:fontFamily="mipro-demibold" />
+        <TextView android:textSize="@dimen/train_event_station_time_text_size" android:textColor="@color/train_event_text_color" android:gravity="start" android:id="@id/arrive_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="mipro-demibold" />
+        <TextView android:textSize="@dimen/train_event_station_time_text_size" android:textColor="@color/train_event_text_color" android:gravity="center" android:id="@id/depart_time" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:fontFamily="mipro-demibold" />
+        <TextView android:textSize="@dimen/train_event_station_time_text_size" android:textColor="@color/train_event_text_color" android:gravity="end" android:layout_gravity="end|center" android:id="@id/stay_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="mipro-demibold" />
+    </LinearLayout>
+</LinearLayout>

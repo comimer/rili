@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:height="@dimen/miuix_search_input_bg_height" />
+    <corners android:radius="@dimen/miuix_search_input_bg_radius" />
+    <padding android:left="@dimen/miuix_search_input_bg_padding_horizontal_left" android:right="@dimen/miuix_search_input_bg_padding_horizontal_right" />
+    <solid android:color="@color/miuix_search_input_bg_color_light" />
+</shape>

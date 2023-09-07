@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/CardLayoutStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/title_root" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/home_card_class_title" android:id="@id/title" android:layout_width="wrap_content" android:layout_marginTop="@dimen/home_card_padding_top" android:layout_marginStart="@dimen/large_margin" android:layout_marginEnd="@dimen/normal_margin" android:layout_alignParentStart="true" style="@style/HomeCardPrimarySmallTitleTextStyle" />
+        <ImageView android:gravity="center_vertical" android:id="@id/iv_eyes" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.329987dip" android:layout_marginBottom="4.0dip" android:src="@drawable/ic_menstruation_show" android:contentDescription="@string/talk_back_description_hide_menstruation" android:layout_marginStart="@dimen/card_item_left_right_padding" android:layout_marginEnd="@dimen/card_item_left_right_padding" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/content_root" android:background="@drawable/card_click_end_shape" android:paddingTop="26.669983dip" android:paddingBottom="22.669983dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/large_margin" android:paddingEnd="@dimen/large_margin">
+        <ImageView android:id="@id/icon" android:layout_width="@dimen/dimen_calendar_homepage_card_img_width_and_height" android:layout_height="@dimen/dimen_calendar_homepage_card_img_width_and_height" android:src="@drawable/ic_menstruation" android:contentDescription="@null" android:layout_marginEnd="@dimen/card_normal_margin" style="@style/ImageStyle" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:ellipsize="end" android:id="@id/primary" android:text="@string/menstruation_card_default_title" android:singleLine="true" style="@style/HomeCardPrimaryBigTitleTextStyle" />
+            <TextView android:ellipsize="end" android:id="@id/secondary" android:visibility="gone" android:layout_marginTop="@dimen/card_summary_huangli_margin_top" android:singleLine="true" style="@style/HomeCardSubTitleTextStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

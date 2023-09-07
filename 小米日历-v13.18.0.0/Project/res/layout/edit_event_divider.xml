@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingTop="@dimen/edit_event_divider_padding_bottom" android:paddingBottom="@dimen/edit_event_divider_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/card_info_group_divider_color" android:layout_width="wrap_content" android:layout_height="@dimen/edit_event_divider_height" android:layout_marginStart="@dimen/dimen_card_info_padding_start" android:layout_marginEnd="@dimen/dimen_card_info_padding_end" />
+</FrameLayout>

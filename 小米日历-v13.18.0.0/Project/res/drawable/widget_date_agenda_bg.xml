@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="440.0dip" android:width="948.0dip" android:viewportWidth="948.0" android:viewportHeight="440.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="#ffffffff" android:pathData="M38,0L910,0A38,38 0,0 1,948 38L948,402A38,38 0,0 1,910 440L38,440A38,38 0,0 1,0 402L0,38A38,38 0,0 1,38 0z" />
+    <group>
+        <clip-path android:pathData="M38,0L910,0A38,38 0,0 1,948 38L948,402A38,38 0,0 1,910 440L38,440A38,38 0,0 1,0 402L0,38A38,38 0,0 1,38 0z" />
+        <path android:fillColor="@drawable/$widget_date_agenda_bg__0" android:pathData="M140,140m-300,0a300,300 0,1 1,600 0a300,300 0,1 1,-600 0" android:strokeAlpha="0.64" android:fillAlpha="0.64" />
+    </group>
+</vector>

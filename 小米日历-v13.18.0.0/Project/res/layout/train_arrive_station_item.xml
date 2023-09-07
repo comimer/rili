@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/train_event_arrive_station_item_text_size" android:textColor="@drawable/train_arrive_station_color_selector" android:gravity="center" android:id="@id/arrive_station" android:background="@drawable/train_arrive_station_bg_selector" android:paddingLeft="@dimen/train_arrive_station_padding_horizontal" android:paddingTop="@dimen/train_arrive_station_padding_vertical" android:paddingRight="@dimen/train_arrive_station_padding_horizontal" android:paddingBottom="@dimen/train_arrive_station_padding_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/train_arrive_station_divide_size"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/view_end" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/view_bottom" android:layout_alignParentBottom="true" />
+    <com.android.calendar.dragview.AccountSettingRoundView android:id="@id/view_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/life_index_bottom_view_height" android:layout_alignParentBottom="true">
+        <View android:id="@id/view_life_index_bg" android:background="@color/drag_view_dialog_background_color" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <com.android.calendar.dragview.AccountSettingDragView android:id="@id/view_life_index_drag" android:layout_width="40.0dip" android:layout_height="40.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_life_index_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="15.639984dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <include layout="@layout/account_settings_drag_view_layout" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.android.calendar.dragview.AccountSettingRoundView>
+</merge>

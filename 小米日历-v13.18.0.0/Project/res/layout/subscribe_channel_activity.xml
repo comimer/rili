@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <miuix.springback.view.SpringBackLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/subscription_list_margin_top" app:scrollableView="@id/list">
+        <miuix.recyclerview.widget.RecyclerView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="ifContentScrolls" />
+    </miuix.springback.view.SpringBackLayout>
+    <com.miui.calendar.view.LoadingLayout android:id="@id/loading" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textAppearance="@style/Miuix.AppCompat.TextAppearance.BlankPage" android:gravity="center" android:id="@id/error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/subscription_service_unsupported" />
+</merge>

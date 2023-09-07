@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/double_line_list_primary_text_size" android:textColor="@color/list_primary_text_color" android:layout_gravity="center_horizontal" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/date_picker_dialog_title_margin_top" android:layout_marginBottom="@dimen/date_picker_dialog_title_margin_bottom" android:fontFamily="mipro-demibold" />
+    <TextView android:textSize="@dimen/date_picker_dialog_sub_title_text_size_size" android:textColor="@color/date_picker_dialog_sub_title_text_size_color" android:layout_gravity="center_horizontal" android:id="@id/date" android:paddingBottom="@dimen/small_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFeatureSettings="tnum" />
+    <miuix.pickerwidget.widget.DatePicker android:orientation="vertical" android:id="@id/date_picker" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/switcher_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

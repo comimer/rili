@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/event_list_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="center_vertical" android:id="@id/response_label" android:paddingLeft="@dimen/event_info_label_padding_left_small" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/view_event_response_label" />
+    <com.miui.calendar.view.MultiRadioGroup android:id="@id/response_value" android:layout_marginTop="0.0dip" style="@style/miui_radio_group">
+        <LinearLayout android:gravity="center_vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <RadioButton android:id="@id/response_yes" android:background="@null" android:text="@string/response_yes" style="@style/miui_radio_button" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <RadioButton android:id="@id/response_maybe" android:background="@null" android:text="@string/response_maybe" style="@style/miui_radio_button" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <RadioButton android:id="@id/response_no" android:background="@null" android:text="@string/response_no" style="@style/miui_radio_button" />
+        </LinearLayout>
+    </com.miui.calendar.view.MultiRadioGroup>
+</LinearLayout>

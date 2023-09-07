@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/near_today_rl" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="@dimen/widget_near_week_today_bg_size" android:layout_height="@dimen/widget_near_week_today_bg_size">
+        <TextView android:textSize="@dimen/widget_near_week_item_text_size" android:textColor="@color/widget_near_agenda_day" android:gravity="center" android:id="@id/tv_date" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fontFamily="mitype-bold" />
+    </RelativeLayout>
+</RelativeLayout>

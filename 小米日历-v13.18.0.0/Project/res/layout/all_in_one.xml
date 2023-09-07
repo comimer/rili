@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.calendar.homepage.HomePageContainer android:id="@id/home_root" android:background="@color/motion_container_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/all_in_one_title_bar" />
+        <view android:id="@id/week_header" android:background="@color/motion_container_bg_color" android:layout_width="fill_parent" android:layout_height="@dimen/all_in_one_week_header_height" android:layout_marginTop="@dimen/all_in_one_week_header_margin_top" class="com.android.calendar.homepage.WeekHeaderView" />
+        <com.miui.calendar.view.MainPanelMotionContainer android:id="@id/main_pane" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.miui.calendar.view.MonthMotionContainer android:id="@id/month_motion_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.miui.calendar.view.MonthPanelContainer android:id="@id/month_container" android:background="@color/motion_container_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/all_in_one_month_view_margin_top">
+                    <include layout="@layout/layout_month_panel" />
+                </com.miui.calendar.view.MonthPanelContainer>
+                <com.miui.calendar.view.VerticalMotionFrameLayout android:id="@id/motion_container" android:paddingTop="@dimen/all_in_one_month_view_margin_top" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </com.miui.calendar.view.MonthMotionContainer>
+        </com.miui.calendar.view.MainPanelMotionContainer>
+        <ViewStub android:id="@id/vs_homepage_tab" android:layout="@layout/homepage_tab" android:layout_width="fill_parent" android:layout_height="@dimen/homepage_tab_height" android:layout_marginTop="@dimen/all_in_one_action_bar_height" />
+        <ViewStub android:id="@id/vs_ls_week_calendar" android:layout="@layout/layout_ls_week_calendar_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/ls_week_calendar_view_top_margin" android:layout_marginStart="@dimen/ls_week_calendar_view_start_margin" />
+    </com.android.calendar.homepage.HomePageContainer>
+    <ViewStub android:id="@id/menu_stub" android:layout="@layout/view_stub_all_in_one_menu_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/vs_today_for_anim_container" android:layout="@layout/homepage_today_for_anim_container" android:inflatedId="@id/today_for_anim_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/menu_item_margin" />
+    <ViewStub android:id="@id/year_stub" android:layout="@layout/fragment_month_year_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/view_mask" android:background="@color/motion_container_bg_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</merge>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/preferences_import_credit_repayment" android:key="key_alarm_default_event_credit" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/preferences_import_train" android:key="key_alarm_default_event_train" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/preferences_import_plane" android:key="key_alarm_default_event_flight" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/preferences_import_movie" android:key="key_alarm_default_event_movie" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/preferences_import_electricity_bill" android:key="key_alarm_default_event_electric" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/preferences_import_gas_bill" android:key="key_alarm_default_event_gas" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/preferences_import_hotel" android:key="key_alarm_default_event_hotel" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/preferences_import_loan" android:key="key_alarm_default_event_loan" android:defaultValue="false" />
+</PreferenceScreen>

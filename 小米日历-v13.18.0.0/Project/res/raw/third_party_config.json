@@ -1,0 +1,11 @@
+{
+  "whiteList": [
+    {
+      "packageName": "com.xiaomi.gamecenter",
+      "allowInsert": true,
+      "allowInsertDirectly": true,
+      "repeatLimit": 5,
+      "SHA1": "7B:6D:C7:07:9C:34:73:9C:E8:11:59:71:9F:B5:EB:61:D2:A0:32:25"
+    }
+  ]
+}

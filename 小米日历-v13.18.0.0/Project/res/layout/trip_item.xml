@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/root" style="@style/DynamicItemLayoutStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/icon" android:layout_width="@dimen/group_card_icon_size" android:layout_height="@dimen/group_card_icon_size" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/ImageStyle" />
+    <TextView android:id="@id/primary" android:layout_width="0.0dip" android:layout_marginStart="11.699982dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/icon" app:layout_constraintTop_toTopOf="parent" style="@style/CardPrimaryTextStyle" />
+    <TextView android:id="@id/secondary" android:layout_width="0.0dip" android:layout_marginTop="2.6999817dip" app:layout_constraintStart_toStartOf="@id/primary" app:layout_constraintTop_toBottomOf="@id/primary" style="@style/CardSecondaryTextStyle" />
+    <TextView android:textColor="@color/button_text_color" android:id="@id/add_arr_city" android:visibility="visible" android:layout_width="0.0dip" android:text="@string/train_event_add_arrive_station" android:layout_marginStart="@dimen/small_margin" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/secondary" app:layout_constraintTop_toTopOf="@id/secondary" style="@style/CardSecondaryTextStyle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

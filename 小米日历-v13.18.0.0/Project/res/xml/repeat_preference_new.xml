@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <miuix.preference.RadioButtonPreference android:layout="@layout/miuix_preference_radiobutton_two_state_background" android:key="repeat_once" />
+    <miuix.preference.RadioButtonPreference android:layout="@layout/miuix_preference_radiobutton_two_state_background" android:key="repeat_daily" />
+    <miuix.preference.RadioButtonPreference android:layout="@layout/miuix_preference_radiobutton_two_state_background" android:key="repeat_workday" />
+    <miuix.preference.RadioButtonPreference android:layout="@layout/miuix_preference_radiobutton_two_state_background" android:key="repeat_weekly" />
+    <miuix.preference.RadioButtonPreference android:layout="@layout/miuix_preference_radiobutton_two_state_background" android:key="repeat_monthly" />
+    <miuix.preference.RadioButtonPreference android:layout="@layout/miuix_preference_radiobutton_two_state_background" android:key="repeat_monthly2" />
+    <miuix.preference.RadioButtonPreference android:layout="@layout/miuix_preference_radiobutton_two_state_background" android:key="repeat_yearly" />
+    <miuix.preference.RadioButtonPreference android:layout="@layout/preference_radiobutton_two_state_background_with_allow_right" android:key="repeat_custom" />
+</PreferenceScreen>

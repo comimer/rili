@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/ad_app_download_style_four_btn_blue_area_radius" />
+    <solid android:color="#ff363636" />
+</shape>

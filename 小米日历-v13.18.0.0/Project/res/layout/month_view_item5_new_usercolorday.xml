@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/month_item_layout" style="@style/WidgetMonthViewItem5New"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/today_bg" style="@style/WidgetMonthViewItemToday" />
+    <ImageView android:id="@id/event" style="@style/WidgetMonthViewItemEventPointNew" />
+    <TextView android:id="@id/work_day" style="@style/WidgetMonthViewItemWorkDayNew" />
+    <RelativeLayout android:gravity="center" android:id="@id/day_lunar_rl" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <TextView android:id="@id/day" style="@style/WidgetMonthViewItemDayNew" />
+        <TextView android:id="@id/lunar" style="@style/WidgetMonthViewItemLunarNew" />
+    </RelativeLayout>
+</RelativeLayout>

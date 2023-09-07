@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <miuix.springback.view.SpringBackLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="30.0px" android:layout_below="@id/action_bar_container" app:layout_constraintBottom_toTopOf="@id/import_help" app:layout_constraintTop_toTopOf="parent" app:scrollableView="@id/scroll_view">
+            <androidx.core.widget.NestedScrollView android:id="@id/scroll_view" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:animateLayoutChanges="true">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="36.0px" android:paddingEnd="36.0px">
+                    <include android:id="@id/card_import_by_email" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/event_import_item" />
+                    <include android:id="@id/card_import_by_local" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0px" layout="@layout/event_import_item" />
+                    <include android:id="@id/card_import_by_caldav" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0px" layout="@layout/event_import_item" />
+                    <include android:id="@id/card_import_by_url" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0px" layout="@layout/event_import_item" />
+                    <include android:id="@id/card_import_by_feishu" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0px" layout="@layout/event_import_item" />
+                    <include android:id="@id/card_import_by_dingd" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0px" layout="@layout/event_import_item" />
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </miuix.springback.view.SpringBackLayout>
+        <TextView android:textSize="@dimen/font_size_46" android:textColor="@color/today_view_color" android:id="@id/import_help" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_import_help_margin_bottom" android:text="@string/import_help" android:fontFamily="mipro-demibold" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>

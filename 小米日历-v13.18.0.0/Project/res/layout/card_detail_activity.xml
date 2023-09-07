@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/motion_container_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.miui.calendar.view.LoadingView android:id="@id/loading" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ListView android:id="@id/list" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/card_detail_margin_top" android:cacheColorHint="@android:color/transparent" android:layout_weight="1.0" />
+    <TextView android:textSize="@dimen/home_card_primary_big_title_text_size" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/button" android:background="@drawable/button_confirm_background_n" android:layout_width="@dimen/subscribe_button_width" android:layout_height="@dimen/subscribe_button_height" android:layout_marginBottom="@dimen/date_calculate_item_padding_start" android:minHeight="@dimen/subscribe_button_height" android:text="@string/subscribe_card" android:fontFamily="miui" />
+</LinearLayout>

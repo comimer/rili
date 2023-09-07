@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/calculate_result_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <miuix.springback.view.SpringBackLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:scrollableView="@id/scroll_view">
+        <androidx.core.widget.NestedScrollView android:id="@id/scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:background="@color/card_bg_color" style="@style/dateCalculateListItemStyle">
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/page_margin_medium" android:minHeight="@dimen/date_calculate_item_min_height">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/calendar_event_header_countdown_number_size" android:id="@id/date_interval" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-8.0dip" android:fontFamily="mitype-demibold" android:textFontWeight="500" />
+                        <TextView android:gravity="bottom" android:id="@id/date_unit" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/HomeCardPrimaryBigTitleTextStyle" />
+                    </LinearLayout>
+                    <TextView android:id="@id/work_day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tab_text_margin_top" android:layout_marginBottom="@dimen/calendar_calculate_spinner_margin_start" style="@style/HomeCardPrimaryBigTitleTextStyle" />
+                </LinearLayout>
+                <View android:id="@id/divider" android:background="@color/date_calculated_result_divider_line_color" android:layout_marginTop="@dimen/page_margin_medium" android:layout_marginBottom="@dimen/page_margin_medium" style="@style/DividerStyle" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </miuix.springback.view.SpringBackLayout>
+    <TextView android:textSize="@dimen/list_secondary_text_size" android:textColor="@color/list_primary_text_color" android:gravity="center" android:id="@id/add_countdown_btn" android:background="@drawable/button_cancel_background_n" android:layout_width="fill_parent" android:layout_height="@dimen/subscribe_button_height" android:layout_marginBottom="@dimen/productivity_agenda_item_margin" android:minHeight="@dimen/subscribe_button_height" android:text="@string/add_countdown" android:layout_alignParentBottom="true" android:fontFamily="miui-bold" android:layout_marginStart="@dimen/productivity_agenda_item_margin" android:layout_marginEnd="@dimen/productivity_agenda_item_margin" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.miui.calendar.widget.EmptyView android:id="@id/empty_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/hint_text_margin_top" android:layout_centerHorizontal="true" app:empty_action_visible="false" app:empty_icon_resId="@drawable/search_result_empty" app:empty_tip_text="@string/premission_description_cannot_access_calendar" />
+    <Button android:textSize="@dimen/setting_button_text_size" android:gravity="center" android:id="@id/setting" android:layout_width="@dimen/setting_button_layout_width" android:layout_height="@dimen/setting_button_layout_height" android:layout_marginTop="@dimen/setting_button_margin_top" android:text="@string/go_to_set" android:layout_below="@id/empty_view" android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.calendar.common.ShareView android:id="@id/root_view" android:background="@color/share_area_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/background_view" android:background="@color/event_inf_bg_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/background2" android:background="@color/white_10" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/real_background" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="21.819977sp" android:textColor="@color/white" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/share_view_close_margin_top" android:fontFamily="mipro-demibold" android:layout_marginEnd="@dimen/share_view_close_margin_end" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/close_share" android:layout_width="33.299988dip" android:layout_height="33.299988dip" android:layout_marginTop="@dimen/share_view_close_margin_top" android:src="@drawable/ic_event_info_close" android:layout_marginEnd="@dimen/share_view_close_margin_end" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.cardview.widget.CardView android:id="@id/card_view" android:layout_width="@dimen/share_view_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/history_card_items_margin_bottom" app:cardElevation="40.0dip" app:layout_constraintBottom_toTopOf="@id/chooser_recycler" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/close_share">
+        <androidx.core.widget.NestedScrollView android:id="@id/img_scroll" android:background="@color/transparent" android:scrollbars="none" android:fadingEdge="none" android:layout_width="@dimen/share_view_width" android:layout_height="@dimen/share_view_height" android:overScrollMode="never" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/close_share">
+            <LinearLayout android:background="@color/transparent" android:layout_width="@dimen/share_view_width" android:layout_height="wrap_content">
+                <ImageView android:id="@id/img_share" android:layout_width="@dimen/share_view_width" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true" android:minHeight="@dimen/share_view_height" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.cardview.widget.CardView>
+    <miuix.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/chooser_recycler" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_card_info_sms_content_line_height" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" />
+</com.android.calendar.common.ShareView>

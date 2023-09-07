@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider android:minWidth="@dimen/widget_large_date_width" android:minHeight="@dimen/widget_large_date_height" android:updatePeriodMillis="21600000" android:initialLayout="@layout/widget_date_init" android:previewImage="@drawable/widget_big_date_preview"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

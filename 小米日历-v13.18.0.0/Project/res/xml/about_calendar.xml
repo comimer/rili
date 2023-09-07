@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="@string/suggestions_and_feedback" android:key="key_suggestions_and_feedback" />
+    <miuix.preference.TextPreference android:title="@string/check_new_version" android:key="key_check_new_version" />
+</PreferenceScreen>

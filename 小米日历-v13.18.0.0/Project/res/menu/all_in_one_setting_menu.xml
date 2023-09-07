@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/search_events" android:title="@string/search_events" app:showAsAction="always" />
+    <item android:id="@id/menu_date_jump" android:title="@string/date_jump_title" app:showAsAction="always" />
+    <item android:id="@id/menu_date_calculate" android:title="@string/date_calculate" app:showAsAction="always" />
+    <item android:id="@id/menu_subscription_service" android:title="@string/subscription_service" app:showAsAction="always" />
+    <item android:id="@id/menu_setting" android:title="@string/setting" app:showAsAction="always" />
+    <item android:id="@id/menu_restore" android:title="@string/icon_add_description" app:showAsAction="always" />
+</menu>

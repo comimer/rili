@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="@dimen/share_view_image_margin_horizontal" android:paddingEnd="@dimen/share_view_image_margin_horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/chooser_icon" android:layout_width="@dimen/share_view_image_size" android:layout_height="@dimen/share_view_image_size" android:scaleType="centerCrop" android:importantForAccessibility="no" />
+    <TextView android:textSize="@dimen/font_size_32" android:textColor="@color/sns_chooser_text_color" android:gravity="center_horizontal" android:id="@id/chooser_text" android:layout_width="@dimen/share_view_image_size" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_app_download_card_yi_bottom_summary_marginend" android:lines="2" />
+</LinearLayout>

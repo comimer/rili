@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/month_motion_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:whatever="http://schemas.android.com/apk/res-auto">
+    <com.miui.calendar.view.InfiniteViewPager android:id="@id/view_pager" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/year_action_bar_height" />
+    <RelativeLayout android:id="@id/menu_root" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/today_container" android:layout_width="@dimen/home_button_container_size" android:layout_height="@dimen/home_button_container_size" android:layout_marginBottom="@dimen/home_button_container_bottom_margin" android:layout_alignParentBottom="true" android:layout_marginEnd="@dimen/home_button_container_end_margin" android:layout_alignParentEnd="true">
+            <com.miui.calendar.view.ShadowView android:layout_gravity="center" android:layout_width="@dimen/home_today_button_size" android:layout_height="@dimen/home_today_button_size" whatever:circle_clolor="@color/month_circle_selected_color" whatever:shadow_color="@color/month_today_shadow" />
+            <TextView android:textSize="@dimen/home_today_button_text_size" android:textColor="@color/today_text_color" android:gravity="center" android:layout_gravity="center" android:id="@id/today" android:background="@drawable/homepage_today_bg" android:layout_width="@dimen/home_today_button_size" android:layout_height="@dimen/home_today_button_size" android:text="@string/homepage_today" android:contentDescription="@string/today_icon_voice_contentdescription" />
+        </FrameLayout>
+    </RelativeLayout>
+</FrameLayout>

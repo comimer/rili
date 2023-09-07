@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/calendar_privacy_related" android:key="key_privacy_related">
+        <Preference android:title="@string/calendar_user_agreement" android:key="key_user_agreement" />
+        <Preference android:title="@string/calendar_privacy_policy" android:key="key_privacy_policy" />
+        <Preference android:title="@string/calendar_data_sharing_instruction" android:key="key_data_sharing_instruction" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/permission_management" android:key="key_permission_management">
+        <Preference android:title="@string/permission_description" android:key="key_permission_description" />
+    </PreferenceCategory>
+</PreferenceScreen>

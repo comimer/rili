@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:id="@android:id/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/widget_date_fl" android:background="@drawable/widget_date_agenda_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/widget_date_agenda_padding_top" android:paddingBottom="@dimen/widget_date_agenda_padding_top" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/widget_date_agenda_padding_start" android:paddingEnd="@dimen/widget_date_agenda_padding_start">
+            <RelativeLayout android:id="@id/date_widget_left_rl" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:id="@id/tv_year" style="@style/WidgetDateOtherText" />
+                <TextView android:textSize="@dimen/widget_date_agenda_day_text_size" android:textColor="@color/widget_date_agenda_day_color" android:id="@id/tv_day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/tv_year" android:fontFamily="mitype-demibold" />
+                <TextView android:id="@id/tv_lunar_year" android:layout_alignParentBottom="true" style="@style/WidgetDateOtherText" />
+                <TextView android:id="@id/tv_lunar_time" android:layout_alignParentBottom="true" android:layout_marginStart="3.0dip" android:layout_toEndOf="@id/tv_lunar_year" style="@style/WidgetDateOtherText" />
+                <TextView android:id="@id/tv_holiday" android:layout_above="@id/tv_lunar_year" style="@style/WidgetDateOtherText" />
+            </RelativeLayout>
+            <include layout="@layout/widget_little_month" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

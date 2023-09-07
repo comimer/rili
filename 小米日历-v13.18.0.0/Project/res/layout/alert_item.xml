@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/root" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/alert_title_text_size" android:textColor="@color/list_primary_text_color" android:id="@id/event_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/alert_when_and_where_margin_top">
+            <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/color_square" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/alert_color_square_margin_end" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/local_image" android:layout_width="@dimen/alert_popup_local_image_width" android:layout_height="@dimen/alert_popup_local_image_height" android:scaleType="fitCenter" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/normal_margin" />
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/alert_when_and_where_text_size" android:textColor="@color/alert_popup_secondary_text_color" android:id="@id/when" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textColor="@color/alert_popup_secondary_text_color" android:id="@id/divider" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alert_reminder_divider" android:layout_marginStart="@dimen/alert_item_horizontal_margin" style="@style/AlertItemSecondaryTextStyle" />
+            <TextView android:textColor="@color/alert_popup_secondary_text_color" android:id="@id/where" android:layout_marginStart="@dimen/alert_where_margin_start" style="@style/DoubleLineListSecondaryTextStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

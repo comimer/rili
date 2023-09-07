@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.miui.calendar.view.CardView android:id="@id/card_view" android:background="@color/card_bg_color_n" style="@style/EventCardStyle">
+        <FrameLayout android:id="@id/custom_header_container" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_card_info_header_height" android:layout_marginTop="@dimen/dimen_card_info_header_margin" android:layout_marginStart="@dimen/dimen_card_info_header_margin" android:layout_marginEnd="@dimen/dimen_card_info_header_margin" />
+        <ScrollView android:id="@id/scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dimen_card_info_content_margin_top">
+            <LinearLayout android:orientation="vertical" android:id="@id/content_container" android:paddingTop="@dimen/dimen_card_info_content_padding_top" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </ScrollView>
+        <View android:layout_gravity="bottom" android:background="@drawable/card_content_bottom_mask" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_card_info_bottom_mask_height" />
+    </com.miui.calendar.view.CardView>
+    <View android:id="@id/card_view_mask" android:background="@drawable/event_info_card_bg" style="@style/EventCardStyle" />
+</FrameLayout>

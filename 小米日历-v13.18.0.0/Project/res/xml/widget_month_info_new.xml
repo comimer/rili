@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider android:minWidth="@dimen/widget_month_view_width" android:minHeight="@dimen/widget_month_view_height" android:updatePeriodMillis="21600000" android:initialLayout="@layout/month_view_widget_new_init" android:previewImage="@drawable/widget_new_month_preview"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

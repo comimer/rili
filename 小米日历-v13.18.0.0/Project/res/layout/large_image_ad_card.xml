@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root" style="@style/CardLayoutStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.miui.calendar.view.OnlineImageView android:id="@id/multi_image_1" android:layout_width="fill_parent" android:layout_height="@dimen/new_large_image_ad_image_height" android:scaleType="fitXY" app:rounded_mode="all" app:rounded_radius="@dimen/card_corners_radius" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/new_large_image_ad_image_height" android:paddingStart="@dimen/card_left_right_margin" android:paddingEnd="@dimen/card_left_right_margin">
+        <ImageButton android:layout_gravity="end|center|top" android:id="@id/close" android:layout_margin="@dimen/small_margin" style="@style/AdCloseImageButtonDarkStyle" />
+        <TextView android:layout_gravity="end|bottom|center" android:id="@id/banner_ad_tag" android:layout_margin="@dimen/second_small_margin" style="@style/SmallAdSpreadDarkStyle" />
+    </FrameLayout>
+</FrameLayout>

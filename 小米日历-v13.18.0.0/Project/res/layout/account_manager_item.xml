@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/account_item_container" android:background="@color/card_bg_color_n" android:paddingTop="@dimen/calendar_account_padding_vertical" android:paddingBottom="@dimen/calendar_account_padding_vertical" android:paddingStart="0.0dip" android:paddingEnd="@dimen/list_common_margin_horizontal" style="@style/DoubleLineListItemLayoutStyle">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/color" android:layout_width="@dimen/account_manager_icon_size" android:layout_height="@dimen/account_manager_icon_size" android:scaleType="centerInside" android:layout_marginStart="@dimen/card_icon_margin_bottom" android:layout_marginEnd="@dimen/event_info_close_margin_end" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:ellipsize="marquee" android:id="@id/calendar" android:duplicateParentState="true" style="@style/HomeCardPrimaryBigTitleTextStyle" />
+            <TextView android:ellipsize="marquee" android:id="@id/status" android:duplicateParentState="true" android:fontFamily="miui" style="@style/HomeCardSubTitleTextStyle" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/date_picker_dialog_sub_title_text_size_size" android:textColor="@color/event_info_list_secondary_text_color" android:layout_gravity="center_vertical" android:id="@id/is_display_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_manager_not_display" android:layout_marginEnd="@dimen/food_card_more_margin_top" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_event_info_right_arrow" />
+        <CheckBox android:layout_gravity="center_vertical" android:id="@id/importCheckBox" android:focusable="false" android:visibility="gone" android:clickable="false" android:longClickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/accessibility_sync_cal" />
+    </LinearLayout>
+</RelativeLayout>

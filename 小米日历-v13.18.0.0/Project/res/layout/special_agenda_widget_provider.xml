@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:id="@android:id/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/widget_spec_fl" android:background="@drawable/widget_special_agenda_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/spec_agande_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/widget_spec_agenda_margin_start" android:paddingEnd="@dimen/widget_spec_agenda_margin_start">
+            <LinearLayout android:orientation="vertical" android:id="@id/spec_agande_date_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/widget_spec_agenda_margin_bottom" android:layout_alignParentBottom="true">
+                <TextView android:id="@id/spec_agande_dayofweek" style="@style/WidgetSpecDayOfWeek" />
+                <TextView android:id="@id/spec_agande_day_and_month" style="@style/WidgetSpecMonthAndDay" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/spec_agenda_event_rl" android:paddingTop="@dimen/widget_spec_agenda_right_padding_top" android:paddingBottom="@dimen/widget_spec_agenda_right_padding_bottom" android:layout_width="@dimen/widget_spec_agenda_right_width" android:layout_height="fill_parent" android:paddingStart="@dimen/widget_spec_agenda_right_padding_start" android:layout_alignParentEnd="true">
+                <LinearLayout android:orientation="vertical" android:id="@id/spec_agenda_ll_1" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/widget_spec_agenda_text_size" android:textColor="@color/widget_spec_agenda_item_title" android:ellipsize="end" android:id="@id/spec_agenda_title_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:fontFamily="mipro-medium" />
+                    <TextView android:textSize="@dimen/widget_spec_agenda_text_size" android:textColor="@color/widget_spec_agenda_item_time" android:id="@id/spec_agenda_time_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:fontFamily="mipro" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/spec_agenda_ll_2" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/widget_spec_agenda_text_size" android:textColor="@color/widget_spec_agenda_item_title" android:ellipsize="end" android:id="@id/spec_agenda_title_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:fontFamily="mipro-demibold" android:textFontWeight="500" />
+                    <TextView android:textSize="@dimen/widget_spec_agenda_text_size" android:textColor="@color/widget_spec_agenda_item_time" android:id="@id/spec_agenda_time_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:fontFamily="mipro-demibold" android:textFontWeight="400" />
+                </LinearLayout>
+                <LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/spec_agenda_ll_3" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/widget_spec_agenda_text_size" android:textColor="@color/widget_spec_agenda_item_title" android:ellipsize="end" android:id="@id/spec_agenda_title_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:fontFamily="mipro-demibold" android:textFontWeight="500" />
+                    <TextView android:textSize="@dimen/widget_spec_agenda_text_size" android:textColor="@color/widget_spec_agenda_item_time" android:id="@id/spec_agenda_time_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:fontFamily="mipro-demibold" android:textFontWeight="400" />
+                </LinearLayout>
+                <TextView android:gravity="center" android:id="@id/spec_agenda_empty" android:visibility="gone" android:text="@string/today_no_event" style="@style/WidgetNoAgendaText" />
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

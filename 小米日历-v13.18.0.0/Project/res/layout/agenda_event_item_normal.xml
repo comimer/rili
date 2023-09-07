@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/month_divider" android:background="@color/motion_container_bg_color" android:layout_width="fill_parent" android:layout_height="@dimen/normal_margin" />
+    <LinearLayout android:orientation="vertical" android:id="@id/item_root" android:background="@drawable/card_bg_central_n" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/card_left_right_margin" android:layout_marginEnd="@dimen/card_left_right_margin">
+        <TextView android:textSize="@dimen/agenda_card_title_text_size" android:textColor="@color/agenda_view_month_title_text_color" android:gravity="start|center" android:id="@id/month_title_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/agenda_view_month_first_title_top_margin" android:layout_marginBottom="@dimen/agenda_view_month_first_title_bottom_margin" android:fontFamily="mipro-demibold" android:textDirection="locale" android:textAlignment="gravity" android:layout_marginStart="@dimen/agenda_view_month_first_title_start_margin" />
+        <include layout="@layout/agenda_event_item_part_event_row" />
+    </LinearLayout>
+    <View android:id="@id/bottom_divider" android:background="@color/motion_container_bg_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/normal_margin" />
+</LinearLayout>

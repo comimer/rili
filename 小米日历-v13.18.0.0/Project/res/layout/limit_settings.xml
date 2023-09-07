@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/card_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/city_root" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/calendar_setting_item_min_height" android:paddingStart="@dimen/alert_popup_padding_bottom">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/limit_city_label" android:layout_centerVertical="true" style="@style/HomeCardPrimaryBigTitleTextStyle" />
+            <miuix.appcompat.widget.Spinner android:id="@id/city_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dimen_card_info_padding_end" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/reminder_switch_root" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/calendar_setting_item_min_height" android:paddingStart="@dimen/alert_popup_padding_bottom" android:paddingEnd="80.0px">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/limit_reminder_switch_label" android:layout_centerVertical="true" style="@style/HomeCardPrimaryBigTitleTextStyle" />
+            <miuix.slidingwidget.widget.SlidingButton android:id="@id/reminder_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/reminder_time_root" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/calendar_setting_item_min_height" android:paddingStart="@dimen/alert_popup_padding_bottom" android:paddingEnd="@dimen/alert_popup_padding_bottom">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/limit_reminder_time_label" android:layout_centerVertical="true" style="@style/HomeCardPrimaryBigTitleTextStyle" />
+            <TextView android:layout_gravity="center_vertical" android:id="@id/reminder_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="8.0dip" android:layout_centerVertical="true" android:drawableEnd="@drawable/ic_event_info_right_arrow" android:layout_alignParentEnd="true" style="@style/HomeCardSubTextStyle" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/car_number_root" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/calendar_setting_item_min_height" android:paddingStart="@dimen/alert_popup_padding_bottom">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/limit_card_number_label" android:layout_centerVertical="true" style="@style/HomeCardPrimaryBigTitleTextStyle" />
+            <miuix.appcompat.widget.Spinner android:id="@id/car_number_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dimen_card_info_padding_end" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/fortune_single_line_list_primary_text_size" android:id="@id/tips" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/normal_margin" android:text="@string/limit_setting_tips" android:singleLine="false" android:paddingStart="@dimen/alert_popup_padding_bottom" android:paddingEnd="@dimen/alert_popup_padding_bottom" style="@style/HomeCardSubTextStyle" />
+</LinearLayout>

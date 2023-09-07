@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <miuix.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/event_info_anniversary_title_margin_left" app:layout_constraintBottom_toTopOf="@id/btn_email_guests" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/home_card_primary_big_title_text_size" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/btn_email_guests" android:background="@drawable/button_confirm_background_n" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/event_info_anniversary_title_margin_left" android:minHeight="@dimen/subscribe_button_height" android:text="@string/email_guests_label" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

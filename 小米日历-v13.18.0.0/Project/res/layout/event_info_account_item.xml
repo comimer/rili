@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/event_list_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:background="@null" style="@style/eventInfoItemViewLastStyle">
+        <TextView android:textSize="@dimen/double_line_list_primary_text_size" android:textColor="@color/card_header_title_text_color" android:id="@id/text1" android:text="@string/event_account" style="@style/eventInfoItemViewTextStyle" />
+        <Spinner android:textSize="@dimen/list_secondary_text_size" android:textColor="@color/card_header_title_text_color_gray" android:id="@id/text2" style="@style/eventInfoItemViewSpinnerStyle" />
+    </LinearLayout>
+</LinearLayout>

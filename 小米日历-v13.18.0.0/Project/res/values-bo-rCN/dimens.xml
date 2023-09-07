@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_agenda_item_dot_margin_start_12_time_format">75.0dip</dimen>
+    <dimen name="card_agenda_item_dot_margin_start_24_time_format">78.0dip</dimen>
+    <dimen name="card_agenda_item_dot_margin_start_all_day">78.0dip</dimen>
+    <dimen name="day_work_rest_text_size">4.0dip</dimen>
+    <dimen name="miuix_label_text_size_small">4.5dip</dimen>
+</resources>

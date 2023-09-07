@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/card_dark_light_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/action_bar_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <miuix.springback.view.SpringBackLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/action_bar_container" app:scrollableView="@id/scroll_view">
+        <androidx.core.widget.NestedScrollView android:id="@id/scroll_view" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:animateLayoutChanges="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ViewStub android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <FrameLayout android:id="@id/main_frame" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </miuix.springback.view.SpringBackLayout>
+    <com.miui.calendar.view.LoadingView android:id="@id/loading" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/detail_header_height" />
+</RelativeLayout>

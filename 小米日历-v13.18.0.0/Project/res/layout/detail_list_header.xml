@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/card_dark_light_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.miui.calendar.view.OnlineImageView android:id="@id/header_image" android:layout_width="fill_parent" android:layout_height="@dimen/calendar_event_header_image_height" android:layout_margin="@dimen/calendar_event_header_image_margin" style="@style/ImageStyle" />
+    <ImageView android:id="@id/header_image_cover" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/detail_header_height" android:src="@drawable/holiday_detail_cover" style="@style/ImageStyle" />
+    <RelativeLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/calendar_card_more_height" android:layout_marginRight="@dimen/calendar_card_more_height" android:layout_marginBottom="@dimen/calendar_picker_switcher_padding_left_right">
+        <TextView android:textSize="@dimen/calendar_event_header_title_text_size" android:textColor="@color/panel_text_foreground" android:textColorLink="@color/event_info_headline_color" android:ellipsize="end" android:id="@id/header_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:fontFamily="miui-bold" />
+        <TextView android:textSize="@dimen/double_line_list_primary_text_size" android:textColor="@color/panel_text_foreground" android:id="@id/header_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/calendar_event_header_title_margin" android:layout_below="@id/header_name" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/header_more_root" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@id/header_date" android:layout_alignParentRight="true">
+            <TextView android:textSize="@dimen/single_line_list_primary_text_size" android:textColor="@color/event_info_header_text_color" android:id="@id/header_more_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/header_more_arrow" style="@style/LargeJumpArrowImageStyle" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

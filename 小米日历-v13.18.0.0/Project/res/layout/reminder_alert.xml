@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/alert_popup_padding_top" android:paddingBottom="@dimen/alert_popup_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/alert_popup_padding_start" android:paddingEnd="@dimen/alert_popup_padding_end"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.calendar.alerts.AlertViewPager android:id="@id/alert_viewpager" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/dots_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/alert_dot_margin_top" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="110.0dip" android:width="110.0dip" android:viewportWidth="110.0" android:viewportHeight="110.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$ic_history__0" android:pathData="M55,0L55,0A55,55 0,0 1,110 55L110,55A55,55 0,0 1,55 110L55,110A55,55 0,0 1,0 55L0,55A55,55 0,0 1,55 0z" />
+    <path android:fillColor="#ffffe8b4" android:pathData="M54,35L56,35A4,4 0,0 1,60 39L60,69A4,4 0,0 1,56 73L54,73A4,4 0,0 1,50 69L50,39A4,4 0,0 1,54 35z" />
+    <path android:fillColor="#ffffe8b4" android:pathData="M28,43.982C28,42.78 28.71,41.699 29.829,41.259C34.412,39.459 46.655,35 55.5,35C64.344,35 76.588,39.459 81.171,41.259C82.29,41.699 83,42.78 83,43.982V74.23C83,76.44 80.681,77.925 78.641,77.075C72.963,74.708 62.888,71 55.5,71C48.112,71 38.037,74.708 32.359,77.075C30.319,77.925 28,76.44 28,74.23V43.982Z" />
+    <path android:fillColor="@drawable/$ic_history__1" android:pathData="M33,36.898C33,35.12 34.173,33.555 35.905,33.153C38.2,32.622 41.433,32 44,32C48.485,32 55,34.897 55,34.897V71C55,71 48.485,68.103 44,68.103C41.308,68.103 37.886,68.786 35.579,69.333C34.282,69.64 33,68.668 33,67.335V36.898Z" />
+    <path android:fillColor="@drawable/$ic_history__2" android:pathData="M55,34.897C55,34.897 61.329,32 66,32C68.753,32 72.429,32.659 74.984,33.2C76.768,33.578 78,35.171 78,36.994V67.39C78,68.706 76.75,69.673 75.466,69.38C72.89,68.793 68.879,68 66,68C61.428,68 55,71 55,71V34.897Z" />
+</vector>

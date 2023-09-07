@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="17.449982sp" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" android:drawableEnd="@drawable/ic_event_info_right_arrow" android:fontFamily="mipro-demibold" android:paddingStart="29.089996dip" android:paddingEnd="29.089996dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

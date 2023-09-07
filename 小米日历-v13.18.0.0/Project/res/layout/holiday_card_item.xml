@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/root_list" android:paddingTop="@dimen/home_card_holiday_padding_top_bottom" android:paddingBottom="@dimen/home_card_holiday_padding_top_bottom" android:paddingStart="@dimen/card_item_left_right_padding" android:paddingEnd="@dimen/card_item_left_right_padding" style="@style/DoubleLineListItemLayoutStyle">
+        <com.miui.calendar.view.OnlineImageView android:id="@id/holiday_image" android:layout_width="@dimen/group_card_icon_size" android:layout_height="@dimen/group_card_icon_size" android:layout_marginEnd="@dimen/group_card_icon_margin_end" app:rounded_mode="all" app:rounded_radius="@dimen/group_card_icon_circle_radius" style="@style/ImageStyle" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:id="@id/primary" android:layout_width="fill_parent" style="@style/HomeCardPrimaryBigTitleTextStyle" />
+            <TextView android:id="@id/secondary" android:layout_width="fill_parent" android:layout_marginTop="@dimen/card_summary_huangli_margin_top" style="@style/HomeCardSubTitleTextStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

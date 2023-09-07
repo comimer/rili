@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/dimen_calendar_settings_margin_start_and_end" android:paddingEnd="@dimen/dimen_calendar_settings_margin_start_and_end"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/setting_about_text_color" android:id="@id/tv_miui_version" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/setting_about_text_color" android:id="@id/tv_calendar_version" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RadioGroup android:orientation="horizontal" android:id="@id/rg_response" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/event_info_card_detail_item_min_height" android:layout_marginStart="@dimen/large_margin" android:layout_marginEnd="@dimen/large_margin">
+        <RadioButton android:textSize="@dimen/event_info_card_radio_button_text_size" android:id="@id/rb_response_yes" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/response_yes" android:layout_weight="1.0" android:fontFamily="miui-bold" style="@style/Widget.CompoundButton.RadioButton.Circle" />
+        <RadioButton android:textSize="@dimen/event_info_card_radio_button_text_size" android:id="@id/rb_response_no" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/response_no" android:layout_weight="1.0" android:fontFamily="miui-bold" style="@style/Widget.CompoundButton.RadioButton.Circle" />
+        <RadioButton android:textSize="@dimen/event_info_card_radio_button_text_size" android:id="@id/rb_response_maybe" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/response_maybe" android:layout_weight="1.0" android:fontFamily="miui-bold" style="@style/Widget.CompoundButton.RadioButton.Circle" />
+    </RadioGroup>
+</FrameLayout>

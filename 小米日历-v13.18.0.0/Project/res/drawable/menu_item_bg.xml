@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/menu_item_pressed_color" />
+            <padding android:left="@dimen/menu_item_padding_start" android:right="@dimen/menu_item_padding_start" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <padding android:left="@dimen/menu_item_padding_start" android:right="@dimen/menu_item_padding_start" />
+        </shape>
+    </item>
+</selector>

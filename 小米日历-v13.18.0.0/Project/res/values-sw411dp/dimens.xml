@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="widget_common_radius">14.279999dip</dimen>
+    <dimen name="widget_four_height">380.84375dip</dimen>
+    <dimen name="widget_two_height">172.32999dip</dimen>
+</resources>

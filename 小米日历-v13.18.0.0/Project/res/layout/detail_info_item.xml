@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/card_bg_color_n" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/info_item_container" android:background="@color/card_bg_color_n" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_card_info_item_height" android:paddingEnd="@dimen/dimen_card_info_padding_end">
+        <ImageView android:id="@id/icon" android:layout_width="@dimen/dimen_card_info_item_height" android:layout_height="fill_parent" android:scaleType="center" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/title_root" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:id="@id/primary" android:fontFamily="mipro-demibold" style="@style/EventInfoItemPrimaryTextStyle" />
+            <TextView android:textSize="@dimen/dimen_card_info_item_secondary_ts" android:id="@id/secondary" style="@style/DoubleLineListSecondaryTextStyle" />
+        </LinearLayout>
+        <TextView android:id="@id/right_text" android:fontFamily="mipro-demibold" style="@style/EventInfoItemRightTextStyle" />
+        <miuix.appcompat.widget.Spinner android:gravity="start" android:id="@id/spinner" android:background="@null" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" app:spinnerModeCompat="dialog" />
+        <ImageView android:id="@id/right_arrow" android:layout_marginLeft="@dimen/normal_margin" style="@style/RightArrowImageStyle" />
+        <miuix.slidingwidget.widget.SlidingButton android:id="@id/is_alarm" android:visibility="gone" android:contentDescription="@string/accessibility_alarm_remind" style="@style/eventInfoListItemSecondarySwitchStyle" />
+    </LinearLayout>
+    <include android:id="@id/group_divider" layout="@layout/edit_event_divider" />
+</LinearLayout>

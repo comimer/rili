@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <miuix.springback.view.SpringBackLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" app:scrollableView="@id/scroll_view">
+        <androidx.core.widget.NestedScrollView android:id="@id/scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:id="@id/date_calculate_date_row" android:layout_marginTop="@dimen/calendar_calculate_title_margin_top" style="@style/dateCalculateListItemStyle">
+                    <TextView android:textSize="@dimen/home_card_primary_big_title_text_size" android:textColor="@color/list_primary_text_color" android:id="@id/date_start_label" android:text="@string/solar_lunar_convert_date" android:fontFamily="miui-bold" android:textFontWeight="500" style="@style/dateCalculateListItemPrimaryTextStyle" />
+                    <TextView android:textSize="@dimen/calendar_event_info_credit_header_repayment" android:textColor="@color/list_secondary_text_color" android:id="@id/date_solar_to_lunar_view" android:fontFamily="miui" style="@style/eventInfoListItemSecondaryDateTextStyle" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </miuix.springback.view.SpringBackLayout>
+    <TextView android:textSize="@dimen/home_card_primary_big_title_text_size" android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/date_calculate_start" android:background="@drawable/button_confirm_background_n" android:layout_width="@dimen/subscribe_button_width" android:layout_height="@dimen/subscribe_button_height" android:layout_margin="@dimen/date_calculate_start_margin" android:minHeight="@dimen/subscribe_button_height" android:text="@string/start_date_calculate" android:fontFamily="miui" />
+</LinearLayout>

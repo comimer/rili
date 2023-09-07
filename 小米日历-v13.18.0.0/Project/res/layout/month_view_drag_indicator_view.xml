@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/month_view_drag_indicator" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/icon" android:layout_width="28.669983dip" android:layout_height="10.0dip" android:layout_marginBottom="7.0dip" android:src="@drawable/ic_drag_indicator" android:scaleType="fitXY" />
+    <View android:id="@id/empty_card" android:visibility="gone" android:layout_height="120.0dip" style="@style/CardLayoutStyle" />
+</LinearLayout>

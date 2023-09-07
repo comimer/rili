@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/list_without_divider_bg" android:paddingTop="@dimen/calendar_account_padding_vertical" android:paddingBottom="@dimen/calendar_account_padding_vertical" android:paddingStart="0.0dip" android:paddingEnd="@dimen/calendar_event_header_text_margin_horizontal" style="@style/DoubleLineListItemLayoutStyle">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/color" android:layout_width="8.0dip" android:layout_height="8.0dip" android:scaleType="centerInside" android:layout_marginStart="@dimen/calendar_sync_item_icon_margin_start" android:layout_marginEnd="@dimen/calendar_account_icon_margin_end" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:ellipsize="marquee" android:id="@id/calendar" android:duplicateParentState="true" style="@style/HomeCardPrimaryBigTitleTextStyle" />
+            <TextView android:ellipsize="marquee" android:id="@id/status" android:duplicateParentState="true" android:fontFamily="miui" style="@style/HomeCardSubTitleTextStyle" />
+        </LinearLayout>
+        <CheckBox android:layout_gravity="center_vertical" android:id="@id/sync" android:focusable="false" android:clickable="false" android:longClickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/accessibility_sync_cal" />
+    </LinearLayout>
+</RelativeLayout>

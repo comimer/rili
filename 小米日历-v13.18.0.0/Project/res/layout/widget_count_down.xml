@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:id="@android:id/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/widget_count_down_fl" android:background="@drawable/widget_two_background" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/widget_count_down_rl" android:paddingTop="@dimen/widget_date_agenda_padding_top" android:paddingBottom="@dimen/widget_date_agenda_padding_top" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/widget_date_agenda_padding_start" android:paddingEnd="@dimen/widget_date_agenda_padding_start">
+            <ImageView android:id="@id/iv_empty" android:visibility="gone" android:layout_width="@dimen/widget_count_down_day_empty_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_count_down_day_empty_margin" android:src="@drawable/widget_count_down_empty" />
+            <TextView android:textSize="@dimen/widget_count_down_event_text_size" android:textColor="@color/widget_count_down_tip_color" android:ellipsize="end" android:id="@id/tv_event_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:fontFamily="mipro-medium" />
+            <RelativeLayout android:id="@id/ll_date_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_below="@id/tv_event_name">
+                <TextView android:textSize="@dimen/widget_count_down_day_text_size" android:textColor="@color/widget_normal_agenda_ing_tip" android:ellipsize="marquee" android:id="@id/tv_date_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="100.0dip" android:maxLines="1" android:fontFamily="mitype-demibold" />
+                <TextView android:id="@id/tv_day_unit" android:layout_marginBottom="9.0dip" android:layout_alignBottom="@id/tv_date_num" android:layout_marginStart="5.0dip" android:layout_toEndOf="@id/tv_date_num" style="@style/WidgetCountDownText" />
+            </RelativeLayout>
+            <TextView android:textColor="@color/widget_count_down_text_color" android:id="@id/tv_week" android:layout_alignParentBottom="true" style="@style/WidgetCountDownText" />
+            <TextView android:id="@id/tv_date" android:layout_above="@id/tv_week" style="@style/WidgetCountDownText" />
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

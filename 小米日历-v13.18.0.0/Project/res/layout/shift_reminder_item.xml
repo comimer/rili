@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/root" android:background="@drawable/list_without_divider_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/calendar_setting_item_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/HomeCardPrimaryBigTitleTextStyle" />
+    <TextView android:layout_gravity="center_vertical" android:id="@id/desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="8.0dip" android:drawableEnd="@drawable/miuix_appcompat_arrow_right" style="@style/HomeCardSubTextStyle" />
+</LinearLayout>

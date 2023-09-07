@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/card_dark_light_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="fill_parent" android:layout_height="@dimen/calendar_event_header_image_height" android:layout_margin="@dimen/calendar_event_header_image_margin" android:src="@drawable/event_info_banner" style="@style/ImageStyle" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/calendar_event_header_image_height" android:layout_margin="@dimen/calendar_event_header_image_margin">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/calendar_picker_switcher_padding_left_right" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/edit_event_divider_padding_bottom">
+            <TextView android:textSize="@dimen/calendar_event_header_title_text_size" android:textColor="@color/white" android:id="@id/tv_movie_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="miui-bold" />
+            <TextView android:textSize="@dimen/calendar_event_info_credit_header_repayment" android:textColor="@color/white" android:id="@id/tv_screenings" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

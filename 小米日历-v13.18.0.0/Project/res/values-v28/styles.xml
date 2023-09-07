@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AdAppDownloadSummaryTextStyleOne" parent="@style/AdCardSummaryTextStyle">
+        <item name="android:textSize">@dimen/ad_app_download_style_one_summary_text_size</item>
+        <item name="android:textColor">@color/ad_card_summary_text_dark_color</item>
+        <item name="android:fontFamily">miui-bold</item>
+        <item name="android:textFontWeight">400</item>
+    </style>
+    <style name="AdAppDownloadSummaryTextStyleThree" parent="@style/AdCardSummaryTextStyle">
+        <item name="android:textSize">@dimen/ad_app_download_style_one_summary_text_size</item>
+        <item name="android:textColor">@color/list_secondary_text_color</item>
+        <item name="android:fontFamily">miui-bold</item>
+        <item name="android:textFontWeight">400</item>
+    </style>
+    <style name="AdAppDownloadTitleTextStyleOne" parent="@style/TextStyle">
+        <item name="android:textSize">@dimen/ad_app_download_style_one_title_text_size</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/list_primary_text_color</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:fontFamily">miui-bold</item>
+        <item name="android:textFontWeight">500</item>
+    </style>
+    <style name="Base.Theme.AppCompat" parent="@style/Base.V28.Theme.AppCompat" />
+    <style name="Base.Theme.AppCompat.Light" parent="@style/Base.V28.Theme.AppCompat.Light" />
+    <style name="Base.V14.ThemeOverlay.MaterialComponents.MaterialAlertDialog" parent="@style/ThemeOverlay.AppCompat.Dialog.Alert">
+        <item name="android:backgroundDimAmount">0.32</item>
+        <item name="android:checkedTextViewStyle">@style/Widget.MaterialComponents.CheckedTextView</item>
+        <item name="android:dialogCornerRadius">@null</item>
+        <item name="alertDialogStyle">@style/MaterialAlertDialog.MaterialComponents</item>
+        <item name="buttonBarButtonStyle">@style/Widget.MaterialComponents.Button.TextButton.Dialog</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Widget.MaterialComponents.Button.TextButton.Dialog</item>
+        <item name="buttonBarNeutralButtonStyle">@style/Widget.MaterialComponents.Button.TextButton.Dialog.Flush</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Widget.MaterialComponents.Button.TextButton.Dialog</item>
+        <item name="materialAlertDialogBodyTextStyle">@style/MaterialAlertDialog.MaterialComponents.Body.Text</item>
+    </style>
+    <style name="CardView.DayNight" parent="@style/CardView.Light">
+        <item name="android:outlineSpotShadowColor">#ff000000</item>
+        <item name="outlineStyle">@style/BackgroundOutline.Light</item>
+    </style>
+    <style name="HomeCardPrimaryBigTitleTextStyle" parent="@style/ListPrimaryTextStyle">
+        <item name="android:textSize">@dimen/account_manager_account_item_text_size</item>
+        <item name="android:fontFamily">miui-bold</item>
+        <item name="android:textFontWeight">500</item>
+    </style>
+    <style name="HomeCardPrimarySmallTitleTextStyle" parent="@style/ListPrimaryTextStyle">
+        <item name="android:textSize">@dimen/home_card_primary_small_title_text_size</item>
+        <item name="android:fontFamily">miui-bold</item>
+        <item name="android:textFontWeight">500</item>
+    </style>
+    <style name="HomeCardPrimaryTitleTextStyle" parent="@style/ListPrimaryTextStyle">
+        <item name="android:textSize">@dimen/list_secondary_text_size</item>
+        <item name="android:fontFamily">mipro-demibold</item>
+        <item name="android:textFontWeight">500</item>
+    </style>
+    <style name="JiXiongTextStyle" parent="@style/TextStyle">
+        <item name="android:textSize">@dimen/list_secondary_text_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/card_bg_color</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/huang_li_ji_xiong_min_height</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:fontFamily">miui-bold</item>
+        <item name="android:textFontWeight">500</item>
+    </style>
+    <style name="TaiShenLabelTextStyle" parent="@style/TextStyle">
+        <item name="android:textSize">@dimen/home_card_primary_big_title_text_size</item>
+        <item name="android:textColor">@color/list_primary_text_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">miui-bold</item>
+        <item name="android:textFontWeight">500</item>
+    </style>
+    <style name="WidgetYearDayWeek">
+        <item name="android:textSize">@dimen/widget_normal_agenda_header_year_text_size</item>
+        <item name="android:textColor">@color/widget_title_year</item>
+        <item name="android:gravity">end</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:fontFamily">mipro-medium</item>
+        <item name="android:textFontWeight">400</item>
+    </style>
+    <style name="Base.V28.Theme.AppCompat" parent="@style/Base.V26.Theme.AppCompat">
+        <item name="dialogCornerRadius">?android:dialogCornerRadius</item>
+    </style>
+    <style name="Base.V28.Theme.AppCompat.Light" parent="@style/Base.V26.Theme.AppCompat.Light">
+        <item name="dialogCornerRadius">?android:dialogCornerRadius</item>
+    </style>
+</resources>

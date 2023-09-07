@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/card_dark_light_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="fill_parent" android:layout_height="@dimen/calendar_event_header_image_height" android:layout_margin="@dimen/calendar_event_header_image_margin" android:src="@drawable/event_info_banner" style="@style/ImageStyle" />
+    <RelativeLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/calendar_event_header_text_margin_horizontal" android:layout_marginRight="@dimen/calendar_event_header_text_margin_horizontal" android:layout_marginBottom="@dimen/calendar_picker_switcher_padding_left_right">
+        <TextView android:textSize="@dimen/calendar_event_header_title_text_size" android:textColor="@color/panel_text_foreground" android:ellipsize="end" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gas_detail_header_title" android:maxLines="2" android:fontFamily="miui-bold" />
+        <TextView android:textSize="@dimen/calendar_event_info_credit_header_repayment" android:textColor="@color/panel_text_foreground" android:id="@id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_below="@id/name" />
+    </RelativeLayout>
+</FrameLayout>

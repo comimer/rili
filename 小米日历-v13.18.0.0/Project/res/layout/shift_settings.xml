@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<miuix.springback.view.SpringBackLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:scrollableView="@id/scroll_view"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:id="@id/scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:background="@color/card_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:id="@id/reminder_switch_root" android:background="@drawable/list_without_divider_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/calendar_setting_item_min_height" android:paddingStart="@dimen/calendar_card_item_left_right_padding" android:paddingEnd="@dimen/calendar_card_item_left_right_padding">
+                    <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/shift_reminder_switch_label" android:layout_weight="1.0" style="@style/HomeCardPrimaryBigTitleTextStyle" />
+                    <miui.widget.SlidingButton android:id="@id/reminder_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:id="@id/interval_root" android:background="@drawable/list_without_divider_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/calendar_setting_item_min_height" android:paddingStart="@dimen/calendar_card_item_left_right_padding" android:paddingEnd="@dimen/calendar_card_item_left_right_padding">
+                    <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/shift_interval_label" android:layout_weight="1.0" style="@style/HomeCardPrimaryBigTitleTextStyle" />
+                    <TextView android:textSize="@dimen/list_secondary_text_size" android:textColor="@color/list_text_color_black_50" android:layout_gravity="center_vertical" android:id="@id/interval" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/miuix_appcompat_arrow_right" android:drawablePadding="8.0dip" style="@style/HomeCardSubTextStyle" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:id="@id/start_day_root" android:background="@drawable/list_without_divider_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/calendar_setting_item_min_height" android:paddingStart="@dimen/calendar_card_item_left_right_padding" android:paddingEnd="@dimen/calendar_card_item_left_right_padding">
+                    <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/shift_start_day_label" android:layout_weight="1.0" style="@style/HomeCardPrimaryBigTitleTextStyle" />
+                    <TextView android:layout_gravity="center_vertical" android:id="@id/start_day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/miuix_appcompat_arrow_right" android:drawablePadding="8.0dip" style="@style/HomeCardSubTextStyle" />
+                </LinearLayout>
+                <include android:id="@id/divider_view" layout="@layout/edit_event_divider" />
+                <TextView android:textAppearance="@style/Miuix.AppCompat.TextAppearance.List.Primary" android:textSize="@dimen/fortune_single_line_list_primary_text_size" android:textColor="@color/shift_setting_title_text_color" android:gravity="center_vertical" android:id="@id/reminder_title" android:background="@drawable/list_without_divider_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/calendar_picker_switcher_padding_left_right" android:text="@string/shift_reminders_label" android:paddingStart="@dimen/calendar_card_item_left_right_padding" android:paddingEnd="@dimen/calendar_card_item_left_right_padding" />
+                <com.miui.calendar.view.DynamicLinearLayout android:orientation="vertical" android:id="@id/reminders_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <View android:layout_width="fill_parent" android:layout_height="@dimen/large_margin" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</miuix.springback.view.SpringBackLayout>

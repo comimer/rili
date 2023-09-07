@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="@dimen/widget_near_week_today_bg_size" android:layout_height="@dimen/widget_near_week_today_bg_size"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

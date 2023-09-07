@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/list" android:background="@color/motion_container_bg_color" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dimen_indicator_view_height_without_shadow" android:cacheColorHint="@android:color/transparent" />
+    <include layout="@layout/layout_indicator" />
+    <TextView android:textSize="@dimen/swipe_up_hint_text_size" android:textColor="@color/swipe_up_guide_hint" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/local_guide" android:background="@drawable/swipe_up_guide_bg" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/swipe_up_hint_margin_bottom" android:drawableLeft="@drawable/swipe_up_guide_hint" android:drawablePadding="@dimen/swipe_up_hint_drawable_padding" />
+    <ImageView android:layout_gravity="bottom|center" android:id="@id/remote_guide" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="@dimen/swipe_up_hint_height" android:layout_marginBottom="@dimen/swipe_up_hint_margin_bottom" />
+    <View android:layout_gravity="bottom" android:id="@id/bottom_divider" android:background="@color/event_list_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</merge>

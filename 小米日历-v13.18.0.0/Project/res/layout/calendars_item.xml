@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/event_info_card_detail_value_text_size" android:textColor="@color/event_info_list_secondary_text_color" android:ellipsize="end" android:id="@id/event_calendar_name" style="@style/eventInfoListItemSecondaryViewStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

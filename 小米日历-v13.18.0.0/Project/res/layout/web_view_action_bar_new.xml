@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/normal_action_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/background" android:background="@color/card_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/normal_action_bar_height_exclude_status">
+        <ImageView android:layout_gravity="start|center" android:id="@id/icon_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/miuix_appcompat_action_bar_back_light" android:contentDescription="@string/action_bar_return" android:layout_marginStart="@dimen/webview_action_bar_back_margin_start" />
+        <TextView android:textSize="15.0sp" android:ellipsize="end" android:gravity="center" android:id="@id/title" android:layout_width="0.0dip" android:layout_height="fill_parent" android:singleLine="true" android:layout_weight="1.0" style="@style/Miuix.AppCompat.TextAppearance.Widget.ActionMode.Title" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/share" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/share_button_light" android:contentDescription="@string/share_title" android:layout_marginEnd="20.0dip" />
+    </LinearLayout>
+</FrameLayout>

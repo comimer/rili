@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:id="@android:id/background" android:background="@drawable/widget_normal_agenda_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/normal_agande_bg" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/widget_normal_agenda_padding" android:paddingEnd="@dimen/widget_normal_agenda_padding">
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/header" android:layout_width="fill_parent" android:layout_height="@dimen/widget_normal_agenda_header_height" android:paddingStart="@dimen/widget_normal_agenda_header_padding" android:paddingEnd="@dimen/widget_normal_agenda_header_padding">
+            <TextView android:id="@id/total_agenda" style="@style/WidgetTodayAgendaTotal" />
+            <TextView android:id="@id/year_week" android:layout_toEndOf="@id/total_agenda" android:layout_alignParentEnd="true" style="@style/WidgetYearDayWeek" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ListView android:id="@id/place_lv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:id="@id/events_list_ll" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <FrameLayout android:id="@id/normal_event_item_fl_1" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                <FrameLayout android:id="@id/normal_event_item_fl_2" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                <FrameLayout android:id="@id/normal_event_item_fl_3" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                <FrameLayout android:id="@id/normal_event_item_fl_4" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+            <TextView android:id="@id/normal_agenda_empty" android:visibility="invisible" android:text="@string/today_no_event" style="@style/WidgetNoAgendaText" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/normal_agenda_widget_bottom" android:layout_width="fill_parent" android:layout_height="@dimen/widget_normal_agenda_bottom_height">
+            <ImageView android:id="@id/more" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/widget_normal_agenda_more" android:layout_centerVertical="true" android:contentDescription="@string/widget_normal_more_event" android:paddingStart="@dimen/widget_normal_agenda_bottom_padding" android:paddingEnd="@dimen/widget_normal_agenda_bottom_padding" />
+            <RelativeLayout android:id="@id/new_event_rl" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="@dimen/widget_normal_agenda_bottom_padding" android:paddingEnd="@dimen/widget_normal_agenda_bottom_padding" android:layout_alignParentEnd="true">
+                <ImageView android:id="@id/new_event" android:background="@drawable/ic_widget_normal_add" android:layout_width="@dimen/widget_month_view_add_icon_size" android:layout_height="@dimen/widget_month_view_add_icon_size" android:layout_centerVertical="true" android:contentDescription="@string/widget_normal_new_event" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.miui.calendar.view.CardView android:id="@id/card_view" android:background="@drawable/event_info_card_bg" android:focusable="true" android:layoutDirection="ltr" style="@style/EventCardStyle">
+        <RelativeLayout android:id="@id/image_container" android:background="@color/event_info_birthday_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:id="@id/red_card" android:background="@drawable/cake_card_bg" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/large_margin" android:src="@drawable/cake_card_bg" android:layout_marginStart="@dimen/large_margin" android:layout_marginEnd="@dimen/large_margin" android:elevation="10.0dip" />
+            </FrameLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="@dimen/event_info_detail_birthday_card_shadow_height" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+                <ImageView android:id="@id/card_shadow" android:visibility="invisible" android:layout_width="300.0dip" android:layout_height="wrap_content" android:src="@drawable/icon_envelope_shadow" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+                <ImageView android:layout_width="fill_parent" android:layout_height="181.81dip" android:src="@drawable/ic_envelope" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/event_info_detail_birthday_countdown_top_margin" android:layout_centerHorizontal="true">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_birthday_title_line" />
+                    <TextView android:textSize="@dimen/list_secondary_text_size" android:textColor="@color/card_detail_red_alarm_text" android:id="@id/birthday_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="260.0dip" android:maxLines="3" android:fontFamily="mipro-demibold" android:layout_marginStart="@dimen/month_holiday_rect_between_day" android:layout_marginEnd="@dimen/month_holiday_rect_between_day" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_birthday_title_line" />
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/birthday_time_container" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/event_info_detail_birthday_time_top_margin" android:layout_centerHorizontal="true">
+                <TextView android:textSize="@dimen/event_info_detail_birthday_time_text_size" android:textColor="#fffffbdc" android:id="@id/birthday_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="mitype-bold" />
+                <TextView android:textSize="@dimen/event_info_detail_birthday_time_text_size" android:textColor="#fffffbdc" android:id="@id/birthday_week" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="miui-bold" android:layout_marginStart="8.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/birthday_title_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/event_info_detail_birthday_title_margin_top" android:layout_below="@id/birthday_time_container" android:layout_centerHorizontal="true" android:layout_marginStart="52.72dip" android:layout_marginEnd="52.72dip">
+                <TextView android:textSize="32.0dip" android:textColor="#fffffbdc" android:ellipsize="end" android:gravity="center" android:id="@id/birthday_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="3" android:fontFamily="miui" />
+                <TextView android:textSize="32.0dip" android:textColor="#fffffbdc" android:gravity="center" android:id="@id/birthday_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/birthday_term" android:fontFamily="miui" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/cake_container" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/homepage_actionbar_button_margin_end" android:layout_below="@id/birthday_title_container" android:layout_centerHorizontal="true">
+                <ImageView android:id="@id/fire_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fire0162" android:layout_centerHorizontal="true" />
+                <ImageView android:id="@id/cake_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_cake" android:layout_below="@id/fire_img" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/alarm_container" android:background="@drawable/event_info_alarm_btn_red_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/event_info_card_margin_end" android:minWidth="@dimen/game_image_height" android:minHeight="@dimen/tab_bg_radius" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/event_info_anniversary_title_margin_left">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/alarm_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_event_info_alarm_started_red" android:layout_marginEnd="@dimen/month_holiday_rect_between_day" />
+                <TextView android:textSize="@dimen/alarm_text_size" android:textColor="@color/card_detail_red_alarm_text_color" android:id="@id/alarm_status_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="mipro-medium" />
+            </LinearLayout>
+        </RelativeLayout>
+    </com.miui.calendar.view.CardView>
+    <View android:id="@id/card_view_mask" android:background="@drawable/event_info_card_bg" style="@style/EventCardStyle" />
+</FrameLayout>

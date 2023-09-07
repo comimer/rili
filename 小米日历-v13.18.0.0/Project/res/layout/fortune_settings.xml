@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/common_background_color" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:background="@color/card_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="52.0dip" android:paddingStart="@dimen/agenda_card_date_num_margin_top" android:paddingEnd="@dimen/agenda_card_date_num_margin_top">
+        <EditText android:id="@id/name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/fortune_name_hint" />
+    </LinearLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/gender_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="52.0dip" android:paddingStart="@dimen/list_common_margin_horizontal">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fortune_gender" android:layout_centerVertical="true" style="@style/HomeCardPrimaryBigTitleTextStyle" />
+        <miuix.appcompat.widget.Spinner android:id="@id/gender" android:layout_width="wrap_content" android:layout_height="wrap_content" android:prompt="@string/fortune_gender" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dimen_card_info_padding_end" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/birthday_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="52.0dip" android:paddingStart="@dimen/list_common_margin_horizontal" android:paddingEnd="@dimen/list_common_margin_horizontal">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fortune_birthday" android:layout_centerVertical="true" style="@style/HomeCardPrimaryBigTitleTextStyle" />
+        <TextView android:id="@id/birthday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="8.0dip" android:layout_centerVertical="true" android:drawableEnd="@drawable/ic_event_info_right_arrow" android:layout_alignParentEnd="true" style="@style/HomeCardSubTextStyle" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/love_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="52.0dip" android:paddingStart="@dimen/list_common_margin_horizontal">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fortune_love" android:layout_centerVertical="true" style="@style/HomeCardPrimaryBigTitleTextStyle" />
+        <miuix.appcompat.widget.Spinner android:id="@id/love" android:layout_width="wrap_content" android:layout_height="wrap_content" android:prompt="@string/fortune_gender" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dimen_card_info_padding_end" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/fortune_single_line_list_primary_text_size" android:id="@id/tips" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/normal_margin" android:text="@string/fortune_setting_tips" android:singleLine="false" android:paddingStart="@dimen/list_common_margin_horizontal" android:paddingEnd="@dimen/list_common_margin_horizontal" style="@style/HomeCardSubTextStyle" />
+</LinearLayout>

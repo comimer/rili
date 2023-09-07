@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/calendar_event_item_padding_vertical" android:paddingBottom="@dimen/calendar_event_item_padding_vertical" android:paddingStart="@dimen/calendar_event_item_padding_horizontal" android:paddingEnd="@dimen/calendar_event_item_padding_horizontal" style="@style/eventInfoItemViewLastStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/list_secondary_text_size" android:id="@id/name" android:focusable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/eventInfoTitleTextStyle" />
+    <ImageButton android:id="@id/contact_remove" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/accessibility_remove_attendee" style="@style/MinusButton" />
+</LinearLayout>

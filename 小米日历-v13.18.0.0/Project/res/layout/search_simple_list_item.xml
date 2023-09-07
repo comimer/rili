@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@android:id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MiuixSearch.ListItem.Delete" />
+    <ImageView android:layout_gravity="end|center" android:id="@id/delete" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="?searchListItemDeleteBtnBg" android:contentDescription="@string/miuix_search_recommendation_item_del_des" android:paddingStart="@dimen/miuix_search_recommendation_item_del_padding" android:paddingEnd="@dimen/miuix_search_recommendation_item_del_padding" android:layout_marginEnd="@dimen/miuix_search_recommendation_item_del_margin" />
+</FrameLayout>

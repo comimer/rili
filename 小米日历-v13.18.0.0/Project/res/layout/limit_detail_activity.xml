@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/card_dark_light_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:background="@drawable/event_info_banner" android:layout_width="fill_parent" android:layout_height="@dimen/calendar_event_header_image_height" android:layout_margin="@dimen/calendar_event_header_image_margin">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/calendar_picker_switcher_padding_left_right" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/edit_event_divider_padding_bottom">
+                <com.miui.calendar.view.LimitNumberView android:layout_gravity="center_vertical" android:id="@id/number_today" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/calendar_event_header_limit_margin_bottom" />
+                <TextView android:textSize="@dimen/home_card_primary_big_title_text_size" android:textColor="@color/white" android:id="@id/city" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip" />
+                <TextView android:textSize="@dimen/home_card_primary_big_title_text_size" android:textColor="@color/white" android:id="@id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/number_tomorrow_root" android:paddingTop="@dimen/ad_close_card_margin_end" android:paddingBottom="@dimen/ad_close_card_margin_end" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/edit_event_divider_margin" android:paddingEnd="@dimen/edit_event_divider_margin">
+                <TextView android:id="@id/label_tomorrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/limit_tomorrow" android:layout_centerVertical="true" style="@style/HomeCardPrimaryBigTitleTextStyle" />
+                <com.miui.calendar.view.LimitNumberView android:id="@id/number_tomorrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/number_after_tomorrow_root" android:paddingTop="@dimen/ad_close_card_margin_end" android:paddingBottom="@dimen/ad_close_card_margin_end" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/edit_event_divider_margin" android:paddingEnd="@dimen/edit_event_divider_margin">
+                <TextView android:id="@id/label_after_tomorrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/limit_after_tomorrow" android:layout_centerVertical="true" style="@style/HomeCardPrimaryBigTitleTextStyle" />
+                <com.miui.calendar.view.LimitNumberView android:id="@id/number_after_tomorrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <include layout="@layout/edit_event_divider" />
+        <LinearLayout android:orientation="vertical" android:background="@color/card_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/double_line_list_primary_text_size" android:gravity="center_vertical" android:paddingTop="@dimen/calendar_calculate_spinner_margin_start" android:paddingBottom="@dimen/calendar_event_header_title_margin" android:text="@string/limit_rule" android:paddingStart="@dimen/calendar_birthday_item_margin_left" style="@style/HomeCardPrimaryBigTitleTextStyle" />
+            <TextView android:textSize="@dimen/list_secondary_text_size" android:textColor="@color/list_secondary_text_color" android:id="@id/limit_rule" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/calendar_birthday_item_margin_left" android:layout_marginRight="@dimen/calendar_birthday_item_margin_left" android:layout_marginBottom="40.0dip" android:lineSpacingExtra="@dimen/small_margin" android:fontFamily="miui" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:id="@id/root_container" android:background="@color/card_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ProgressBar android:id="@id/pb_frame" android:layout_width="0.100000024dip" android:layout_height="0.100000024dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Widget.AppCompat.ProgressBar" />
+    <LinearLayout android:id="@id/event_tab_container" android:contentDescription="@string/edit_event_tab_event" app:layout_constraintEnd_toStartOf="@id/birthday_tab_container" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/edit_event_tab_style_v3">
+        <RelativeLayout style="@style/edit_event_tab_style_v4">
+            <ViewStub android:id="@id/tab_lot_event_vs" android:layout="@layout/viewstub_event_lott_view" android:layout_width="24.699982dip" android:layout_height="24.699982dip" android:layout_centerInParent="true" />
+            <ViewStub android:id="@id/tab_image_event_vs" android:layout="@layout/viewstub_event_image_view" android:layout_width="24.699982dip" android:layout_height="24.699982dip" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:id="@id/tab_text_event" android:text="@string/edit_event_tab_event" style="@style/edit_event_text_style" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/birthday_tab_container" android:contentDescription="@string/edit_event_tab_birthday" app:layout_constraintEnd_toStartOf="@id/anniversary_tab_container" app:layout_constraintStart_toEndOf="@id/event_tab_container" app:layout_constraintTop_toTopOf="parent" style="@style/edit_event_tab_style_v3">
+        <RelativeLayout style="@style/edit_event_tab_style_v4">
+            <ViewStub android:id="@id/tab_lot_birthday_vs" android:layout="@layout/viewstub_event_lott_view" android:layout_width="24.699982dip" android:layout_height="24.699982dip" android:layout_centerInParent="true" />
+            <ViewStub android:id="@id/tab_image_birthday_vs" android:layout="@layout/viewstub_event_image_view" android:layout_width="24.699982dip" android:layout_height="24.699982dip" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:id="@id/tab_text_birthday" android:text="@string/edit_event_tab_birthday" style="@style/edit_event_text_style" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/anniversary_tab_container" android:contentDescription="@string/edit_event_tab_anniversary" app:layout_constraintEnd_toStartOf="@id/countdown_tab_container" app:layout_constraintStart_toEndOf="@id/birthday_tab_container" app:layout_constraintTop_toTopOf="parent" style="@style/edit_event_tab_style_v3">
+        <RelativeLayout style="@style/edit_event_tab_style_v4">
+            <ViewStub android:id="@id/tab_lot_anniversary_vs" android:layout="@layout/viewstub_event_lott_view" android:layout_width="24.699982dip" android:layout_height="24.699982dip" android:layout_centerInParent="true" />
+            <ViewStub android:id="@id/tab_image_anniversary_vs" android:layout="@layout/viewstub_event_image_view" android:layout_width="24.699982dip" android:layout_height="24.699982dip" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:id="@id/tab_text_anniversary" android:text="@string/edit_event_tab_anniversary" style="@style/edit_event_text_style" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/countdown_tab_container" android:contentDescription="@string/edit_event_tab_countdown" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/anniversary_tab_container" app:layout_constraintTop_toTopOf="parent" style="@style/edit_event_tab_style_v3">
+        <RelativeLayout style="@style/edit_event_tab_style_v4">
+            <ViewStub android:id="@id/tab_lot_countdown_vs" android:layout="@layout/viewstub_event_lott_view" android:layout_width="24.699982dip" android:layout_height="24.699982dip" android:layout_centerInParent="true" />
+            <ViewStub android:id="@id/tab_image_countdown_vs" android:layout="@layout/viewstub_event_image_view" android:layout_width="24.699982dip" android:layout_height="24.699982dip" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:id="@id/tab_text_countdown" android:text="@string/edit_event_tab_countdown" style="@style/edit_event_text_style" />
+    </LinearLayout>
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/countdown_tab_container" layout="@layout/edit_event_top_divider" />
+    <FrameLayout android:id="@id/main_frame" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/edit_event_divider_fl" />
+    <FrameLayout android:id="@id/voice_assist_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/home_button_container_bottom_margin" android:layout_marginEnd="@dimen/home_button_container_end_margin" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent">
+        <com.miui.calendar.view.ShadowView android:layout_gravity="center" android:layout_width="@dimen/homepage_menu_size" android:layout_height="@dimen/homepage_menu_size" app:shadow_color="@color/new_event_shadow" app:shadow_offset_y="0.0dip" />
+        <ImageView android:layout_gravity="center" android:id="@id/voice_assist_img" android:background="@drawable/homepage_new_event_bg" android:layout_width="@dimen/homepage_menu_size" android:layout_height="@dimen/homepage_menu_size" android:src="@drawable/ic_voice_assist" android:scaleType="center" android:contentDescription="@string/talkback_voice_assist" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

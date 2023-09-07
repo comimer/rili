@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="abc_config_prefDialogWidth">440.0dip</dimen>
+    <item type="dimen" name="abc_dialog_fixed_height_major">60.000004%</item>
+    <item type="dimen" name="abc_dialog_fixed_height_minor">90.0%</item>
+    <item type="dimen" name="abc_dialog_fixed_width_major">60.000004%</item>
+    <item type="dimen" name="abc_dialog_fixed_width_minor">90.0%</item>
+    <item type="dimen" name="abc_dialog_min_width_major">55.000008%</item>
+    <item type="dimen" name="abc_dialog_min_width_minor">79.99999%</item>
+    <dimen name="miuix_search_cancel_button_margin_end">9.639984dip</dimen>
+    <dimen name="miuix_search_cancel_button_margin_start">9.639984dip</dimen>
+    <dimen name="miuix_search_cancel_button_padding_horizontal">9.909973dip</dimen>
+    <dimen name="miuix_search_cancel_button_size">14.169983sp</dimen>
+    <dimen name="miuix_search_cancel_padding_bottom">9.779999dip</dimen>
+    <dimen name="miuix_search_compose_divider_height">41.78dip</dimen>
+    <dimen name="miuix_search_compose_divider_width">0.44000006dip</dimen>
+    <dimen name="miuix_search_container_input_icon_layout">18.0dip</dimen>
+    <dimen name="miuix_search_container_margin_start">23.109985dip</dimen>
+    <dimen name="miuix_search_edit_text_size">13.0sp</dimen>
+    <dimen name="miuix_search_flexbox_height">36.439972dip</dimen>
+    <dimen name="miuix_search_flexbox_item_marginEnd">13.329987dip</dimen>
+    <dimen name="miuix_search_flexbox_margin_vertical">6.669983dip</dimen>
+    <dimen name="miuix_search_flexbox_padding_horizontal">20.449982dip</dimen>
+    <dimen name="miuix_search_flexbox_text_size">13.329987dip</dimen>
+    <dimen name="miuix_search_history_item_padding">18.21997dip</dimen>
+    <dimen name="miuix_search_history_item_text_size">16.889984dip</dimen>
+    <dimen name="miuix_search_input_bg_height">42.0dip</dimen>
+    <dimen name="miuix_search_input_bg_padding_horizontal_left">12.0dip</dimen>
+    <dimen name="miuix_search_input_bg_padding_horizontal_right">10.0dip</dimen>
+    <dimen name="miuix_search_input_bg_radius">68.0dip</dimen>
+    <dimen name="miuix_search_input_margin_left">12.0dip</dimen>
+    <dimen name="miuix_search_list_padding_horizontal">23.109985dip</dimen>
+    <dimen name="miuix_search_recommendation_group_title_padding_vertical">8.0dip</dimen>
+    <dimen name="miuix_search_recommendation_group_title_text_size">12.439972sp</dimen>
+    <dimen name="miuix_search_recommendation_item_del_height">22.21997dip</dimen>
+    <dimen name="miuix_search_recommendation_item_del_margin">4.4499817dip</dimen>
+    <dimen name="miuix_search_recommendation_item_del_padding">18.669983dip</dimen>
+    <dimen name="miuix_search_recommendation_item_del_width">22.21997dip</dimen>
+    <dimen name="miuix_search_view_padding_horizontal">23.109985dip</dimen>
+</resources>

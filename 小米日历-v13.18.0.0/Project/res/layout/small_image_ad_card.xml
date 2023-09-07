@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" style="@style/CardLayoutStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/root" android:background="@drawable/normal_clickable_only_item_bg" android:paddingTop="@dimen/card_normal_margin" android:paddingBottom="@dimen/card_normal_margin" style="@style/CardContentLayoutStyle">
+        <com.miui.calendar.view.OnlineImageView android:id="@id/multi_image_1" android:layout_width="@dimen/small_image_ad_card_image_width" android:layout_height="@dimen/small_image_ad_card_image_height" android:scaleType="fitXY" android:layout_marginEnd="@dimen/card_normal_margin" app:rounded_mode="all" app:rounded_radius="@dimen/small_image_ad_card_image_corners_radius" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:id="@id/title" android:layout_marginEnd="@dimen/small_image_ad_card_right_padding" style="@style/AdCardTitleTextStyle" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+                <TextView android:textSize="@dimen/huangli_good_bad_type_size" android:textColor="@color/book_rating_text_color" android:layout_gravity="center_vertical" android:id="@id/source" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="5.0dip" />
+                <TextView android:layout_gravity="center_vertical" android:id="@id/banner_ad_tag" style="@style/BigAdSpreadStyle" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageButton android:id="@id/close" android:layout_marginTop="@dimen/small_margin" android:layout_marginEnd="@dimen/ad_close_card_margin_end" android:layout_alignParentEnd="true" style="@style/AdCloseImageButtonStyle" />
+</RelativeLayout>

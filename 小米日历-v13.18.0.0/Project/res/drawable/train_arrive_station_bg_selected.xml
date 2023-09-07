@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/train_arrive_station_radius" />
+    <solid android:color="@color/train_arrive_station_bg_color_selected" />
+    <stroke android:width="@dimen/train_arrive_station_border_size_selected" android:color="@color/train_arrive_station_border_selected" />
+</shape>

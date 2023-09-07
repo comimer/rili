@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <miuix.springback.view.SpringBackLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:scrollableView="@id/scroll_view">
+        <androidx.core.widget.NestedScrollView android:id="@id/scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never">
+            <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/large_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/edit_event_location_padding_bottom" android:paddingBottom="@dimen/edit_event_location_padding_bottom" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/line_height_single" android:paddingStart="@dimen/edit_event_text_padding_horizontal" android:paddingEnd="@dimen/edit_event_text_padding_horizontal">
+                    <EditText android:id="@id/title" android:hint="@string/edit_event_birthday_name_hint" style="@style/LargeEditTextStyle" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/birthday_date_row" style="@style/eventInfoListItemStyle">
+                    <TextView android:text="@string/event_info_when" style="@style/eventInfoListItemPrimaryTextStyle" />
+                    <TextView android:id="@id/birthday_date" android:contentDescription="@string/accessibility_pick_start_date" style="@style/eventInfoListItemSecondaryDateTextStyle" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/reminder_time_row" style="@style/eventInfoListItemStyle">
+                    <TextView android:text="@string/event_info_reminders_label_1" style="@style/eventInfoListItemPrimaryTextStyle" />
+                    <TextView android:id="@id/reminder_time" android:contentDescription="@string/accessibility_pick_start_date" style="@style/eventInfoListItemSecondaryDateTextStyle" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/alarm_row" style="@style/eventInfoListItemStyle">
+                    <TextView android:clickable="false" android:text="@string/pref_title_alarm_remind" android:textDirection="locale" android:textAlignment="gravity" style="@style/eventInfoListItemPrimaryTextSwitchStyle" />
+                    <miui.widget.SlidingButton android:id="@id/is_alarm" android:contentDescription="@string/accessibility_all_day" style="@style/eventInfoListItemSecondarySwitchStyle" />
+                </LinearLayout>
+                <include layout="@layout/edit_event_divider" />
+                <LinearLayout android:id="@id/contact_birthday_row" style="@style/eventInfoListItemStyle">
+                    <TextView android:text="@string/edit_event_birthday_import_from_contact" style="@style/eventInfoListItemPrimaryTextStyle" />
+                    <TextView android:layout_marginStart="0.0dip" style="@style/eventInfoListItemSecondaryDateTextStyle" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </miuix.springback.view.SpringBackLayout>
+</LinearLayout>

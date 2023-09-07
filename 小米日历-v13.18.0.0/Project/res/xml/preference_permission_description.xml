@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <miuix.preference.TextPreference android:title="@string/premission_access_calendar" android:key="key_access_calendar" android:summary="@string/premission_description_access_calendar" />
+    <miuix.preference.TextPreference android:title="@string/premission_read_contacts" android:key="key_read_contacts" android:summary="@string/premission_description_read_contacts" />
+    <miuix.preference.TextPreference android:title="@string/premission_read_write_storage" android:key="key_read_write_storage" android:summary="@string/premission_description_read_write_storage" />
+    <miuix.preference.TextPreference android:title="@string/premission_read_phone_state" android:key="key_read_phone_state" android:summary="@string/premission_description_read_phone_state" />
+    <miuix.preference.TextPreference android:title="@string/permission_read_image_video" android:key="key_read_image_video" android:summary="@string/permission_description_image_video" />
+    <miuix.preference.TextPreference android:title="@string/permission_read_audio" android:key="key_read_audio" android:summary="@string/permission_description_audio" />
+    <miuix.preference.TextPreference android:title="@string/premission_read_notice_state" android:key="key_read_notice_manager" android:summary="@string/premission_description_notice_manager" />
+</PreferenceScreen>

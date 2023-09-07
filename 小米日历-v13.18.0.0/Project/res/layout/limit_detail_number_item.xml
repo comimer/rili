@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/divider" android:background="@color/gray80" android:layout_width="@dimen/calendar_event_header_limit_divider_width" android:layout_height="@dimen/card_agenda_item_padding_top" android:layout_marginLeft="@dimen/small_margin" android:layout_marginTop="1.0dip" android:layout_marginRight="@dimen/small_margin" />
+    <TextView android:textSize="@dimen/calendar_event_header_title_text_size" android:textColor="@color/limit_card_number_text_color" android:id="@id/number" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

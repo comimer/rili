@@ -1,0 +1,46 @@
+.class public final synthetic Lcom/android/calendar/cards/y1;
+.super Ljava/lang/Object;
+.source "R8$$SyntheticClass"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic a:Lcom/android/calendar/cards/x1;
+
+.field public final synthetic b:Landroid/content/Context;
+
+.field public final synthetic c:Lcom/android/calendar/cards/x1$c;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/android/calendar/cards/x1;Landroid/content/Context;Lcom/android/calendar/cards/x1$c;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/android/calendar/cards/y1;->a:Lcom/android/calendar/cards/x1;
+
+    iput-object p2, p0, Lcom/android/calendar/cards/y1;->b:Landroid/content/Context;
+
+    iput-object p3, p0, Lcom/android/calendar/cards/y1;->c:Lcom/android/calendar/cards/x1$c;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 3
+
+    iget-object v0, p0, Lcom/android/calendar/cards/y1;->a:Lcom/android/calendar/cards/x1;
+
+    iget-object v1, p0, Lcom/android/calendar/cards/y1;->b:Landroid/content/Context;
+
+    iget-object v2, p0, Lcom/android/calendar/cards/y1;->c:Lcom/android/calendar/cards/x1$c;
+
+    invoke-static {v0, v1, v2}, Lcom/android/calendar/cards/x1$b;->n0(Lcom/android/calendar/cards/x1;Landroid/content/Context;Lcom/android/calendar/cards/x1$c;)V
+
+    return-void
+.end method

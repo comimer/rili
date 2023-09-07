@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/double_line_list_primary_text_size" android:textColor="@color/list_primary_text_color" android:layout_gravity="center_horizontal" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="miui-bold" />
+    <TextView android:textSize="@dimen/date_picker_dialog_sub_title_text_size_size" android:textColor="@color/date_picker_dialog_sub_title_text_size_color" android:layout_gravity="center_horizontal" android:id="@id/datetime" android:paddingBottom="@dimen/small_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFeatureSettings="tnum" />
+    <miuix.pickerwidget.widget.DateTimePicker android:orientation="vertical" android:id="@id/time_picker" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:id="@id/lunar_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/picker_dialog_switcher" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/event_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/action_cancel" android:text="@string/discard_label" android:layout_weight="0.0" android:contentDescription="@string/discard_label" android:layout_marginStart="@dimen/edit_event_title_button_margin" style="@style/Widget.ActionMode.Button" />
+    <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/action_bar_tab_text_size" android:ellipsize="end" android:gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxWidth="200.0dip" android:text="@string/event_create" android:lines="2" android:layout_centerInParent="true" style="@style/Miuix.AppCompat.TextAppearance.Widget.ActionMode.Title" />
+    </RelativeLayout>
+    <Button android:id="@id/action_done" android:text="@android:string/ok" android:layout_weight="0.0" android:contentDescription="@android:string/ok" android:layout_marginEnd="@dimen/edit_event_title_button_margin" style="@style/Widget.ActionMode.Button.Default" />
+</LinearLayout>

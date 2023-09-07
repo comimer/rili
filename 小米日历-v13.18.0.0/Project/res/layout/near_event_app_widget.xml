@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:id="@android:id/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/fl_near_event" android:background="@drawable/widget_near_agenda_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_near_event" android:paddingTop="@dimen/widget_date_agenda_padding_top" android:paddingBottom="@dimen/widget_date_agenda_padding_top" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/widget_date_agenda_padding_start" android:paddingEnd="@dimen/widget_date_agenda_padding_start">
+            <include layout="@layout/widget_little_month" />
+            <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/widget_agenda_empty_text" android:textColor="@color/widget_near_agenda_empty" android:gravity="center" android:id="@id/tv_no_event" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/today_no_event" android:fontFamily="mipro-demibold" android:textFontWeight="500" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layout_marginStart="10.0dip">
+                    <TextView android:id="@id/near_agenda_month_day" android:layout_marginBottom="11.0dip" android:layout_marginStart="24.0dip" style="@style/widget_near_list_title" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                        <include android:id="@id/near_event_item_1" layout="@layout/widget_near_event_list_item_1" />
+                        <include android:id="@id/near_event_item_2" layout="@layout/widget_near_event_list_item_2" />
+                    </LinearLayout>
+                    <TextView android:textSize="@dimen/widget_near_agenda_other_text_size" android:textColor="#ff2997ff" android:id="@id/tv_other" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:fontFamily="mipro-medium" android:layout_marginStart="26.0dip" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

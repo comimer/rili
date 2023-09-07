@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View android:background="@color/all_in_one_top_divider_color" android:layout_width="fill_parent" android:layout_height="@dimen/event_info_card_detail_remarks_divider_height" android:layout_marginTop="@dimen/large_margin" android:layout_marginBottom="@dimen/large_margin" android:layout_marginStart="@dimen/event_info_anniversary_title_margin_left" android:layout_marginEnd="@dimen/event_info_anniversary_title_margin_left"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

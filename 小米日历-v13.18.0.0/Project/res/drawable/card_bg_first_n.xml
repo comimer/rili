@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:bottom="@dimen/card_bg_border_width_neg">
+        <shape android:shape="rectangle">
+            <corners android:topLeftRadius="@dimen/card_bg_radius" android:topRightRadius="@dimen/card_bg_radius" />
+            <solid android:color="@color/card_bg_color_n" />
+        </shape>
+    </item>
+</layer-list>

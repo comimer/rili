@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@color/item_contact_birthday_color" android:paddingTop="@dimen/calendar_birthday_item_padding_vertical" android:paddingBottom="@dimen/calendar_birthday_item_padding_vertical" android:paddingStart="@dimen/calendar_birthday_item_margin_left" android:paddingEnd="@dimen/calendar_birthday_item_margin_right" style="@style/DoubleLineListItemLayoutStyle">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:id="@id/name" style="@style/DoubleLineListPrimaryTextStyle" />
+            <TextView android:id="@id/date" android:layout_marginTop="@dimen/calendar_text_primary_secondary_margin" style="@style/DoubleLineListSecondaryTextStyle" />
+        </LinearLayout>
+        <TextView android:layout_gravity="center_vertical" android:id="@id/importedHint" android:text="@string/imported" style="@style/SingleLineListPrimaryTextStyle" />
+        <CheckBox android:layout_gravity="center_vertical" android:id="@id/importCheckBox" android:focusable="false" android:clickable="false" android:longClickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/accessibility_sync_cal" />
+    </LinearLayout>
+</LinearLayout>

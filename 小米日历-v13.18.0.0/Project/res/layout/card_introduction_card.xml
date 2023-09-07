@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@null" android:paddingTop="@dimen/card_detail_icon_padding_top" android:paddingBottom="@dimen/card_detail_icon_padding_bottom" android:minHeight="@dimen/card_detail_introduction_card_min_height" style="@style/CardLayoutStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.miui.calendar.view.OnlineImageView android:id="@id/icon" android:layout_width="@dimen/card_detail_icon_width" android:layout_height="@dimen/card_detail_icon_height" android:scaleType="fitXY" />
+    <TextView android:id="@id/title" android:layout_marginTop="@dimen/homepage_actionbar_button_margin_start" style="@style/HomeCardPrimaryBigTitleTextStyle" />
+    <TextView android:textSize="@dimen/font_size_38" android:textColor="@color/event_info_description_text_color" android:gravity="center" android:id="@id/description" android:fontFamily="miui" style="@style/HomeCardSubTitleTextStyle" />
+</LinearLayout>

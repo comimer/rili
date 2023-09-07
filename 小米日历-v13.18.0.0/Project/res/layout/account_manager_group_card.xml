@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_marginBottom="8.0dip" style="@style/CardLayoutStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/card_lottery_item_margin_top">
+        <ImageView android:id="@id/account_group_img" android:layout_width="@dimen/account_manager_group_icon_size" android:layout_height="@dimen/account_manager_group_icon_size" android:layout_marginTop="@dimen/account_manager_group_icon_margin_top" android:src="@drawable/icon_account_phone" android:layout_marginStart="@dimen/account_manager_setting_color_margin_bottom" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/account_manager_group_icon_margin_top" android:minHeight="@dimen/account_manager_group_icon_size" android:layout_marginStart="@dimen/month_week_view_padding_bottom" android:layout_toEndOf="@id/account_group_img">
+            <TextView android:textSize="@dimen/font_size_48" android:id="@id/account_group_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="miui-bold" android:layout_marginEnd="@dimen/account_manager_account_group_margin_end" />
+            <TextView android:textSize="@dimen/font_size_32" android:textColor="@color/event_info_description_text_color" android:id="@id/sync_time_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/spinner_parent" android:layout_width="@dimen/subscription_list_subscribe_btn_height" android:layout_height="@dimen/subscription_list_subscribe_btn_height" android:layout_marginTop="@dimen/card_bg_radius" android:contentDescription="@string/talk_back_setting" android:layout_marginEnd="@dimen/account_manager_account_group_more_end" android:layout_alignParentEnd="true">
+            <ImageView android:layout_width="@dimen/subscription_list_subscribe_btn_height" android:layout_height="@dimen/subscription_list_subscribe_btn_height" android:src="@drawable/icon_account_group_more" android:scaleType="centerInside" />
+            <miuix.appcompat.widget.Spinner android:layout_gravity="center" android:id="@id/more_spinner" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.miui.calendar.view.DynamicLinearLayout android:id="@id/account_container" android:layout_marginBottom="@dimen/account_manager_account_item_margin_bottom" style="@style/DynamicContainerStyle" />
+</LinearLayout>
